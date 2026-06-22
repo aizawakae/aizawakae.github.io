@@ -2300,3 +2300,43 @@ border-radius:50px;
 background:#ff5555;
 
 }
+.service-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 18px;
+    border-radius: 12px;
+
+    background: #ff2d2d;
+    color: #fff;
+    text-decoration: none;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.service-btn:hover {
+    background: #ff4d4d;
+    transition: 0.2s ease;
+}
+a.service-btn {
+    all: unset;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 12px 18px !important;
+    border-radius: 12px !important;
+
+    background: #ff2d2d !important;
+    color: white !important;
+
+    cursor: pointer !important;
+    font-weight: 600 !important;
+}
+
+a.service-btn:hover {
+    background: #ff4d4d !important;
+}

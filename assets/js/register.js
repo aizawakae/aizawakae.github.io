@@ -7,7 +7,8 @@ import {
 
 import {
     doc,
-    setDoc
+    setDoc,
+    serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
 const form = document.getElementById("registerForm");
@@ -19,9 +20,7 @@ function showMessage(message, type){
     messageBox.className = "message-box " + type;
 
     setTimeout(() => {
-
         messageBox.className = "message-box";
-
     }, 3000);
 
 }
@@ -36,10 +35,8 @@ form.addEventListener("submit", async (e) => {
     const password2 = document.getElementById("password2").value;
 
     if (password !== password2) {
-
         showMessage("Şifreler uyuşmuyor.", "error");
         return;
-
     }
 
     try {
@@ -50,50 +47,39 @@ form.addEventListener("submit", async (e) => {
             password
         );
 
-        await updateProfile(userCredential.user, {
+        const user = userCredential.user;
+
+        await updateProfile(user, {
             displayName: name
         });
 
-        await setDoc(doc(db, "users", userCredential.user.uid), {
+        await setDoc(doc(db, "users", user.uid), {
 
-            uid: userCredential.user.uid,
-
+            uid: user.uid,
             username: name,
-
             email: email,
 
             plan: "standard",
-
             admin: false,
-
             banned: false,
 
             balance: 0,
+            wallet: 0,
+            totalOrders: 0,
 
-         wallet: 0,
+            avatar: "",
+            verified: false,
+            vip: false,
 
-         totalOrders: 0,
-
-         avatar: "",
-
-         verified: false,
-
-         vip: false,
-
-         createdAt: new Date(),
-
-         lastLogin: new Date()
-
-            lastLogin: new Date()
+            createdAt: serverTimestamp(),
+            lastLogin: serverTimestamp()
 
         });
 
         showMessage("Kayıt başarılı.", "success");
 
         setTimeout(() => {
-
             window.location.href = "index.html";
-
         }, 1500);
 
     } catch (error) {

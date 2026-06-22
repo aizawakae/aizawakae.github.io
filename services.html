@@ -11,11 +11,13 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/market.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/market.css">
 
 </head>
 
 <body>
+    
 
     <div class="bg-glow"></div>
     <div class="bg-grid"></div>
@@ -25,17 +27,33 @@
 
     <header class="navbar">
 
-        <a href="index.html" class="logo">
-            K'
-        </a>
+<a href="index.html" class="logo">
 
-        <nav>
+<img src="assets/images/logo.png" alt="logo">
 
-            <a href="payment.html"></a>
+<span>AizawaKae</span>
 
-        </nav>
+</a>
 
-    </header>
+<nav>
+
+<a href="index.html">Ana Sayfa</a>
+
+<a href="#contact">İletişim</a>
+
+<a href="login.html" id="loginButton" class="login-btn">
+
+Giriş Yap
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<div id="menuOverlay" class="menu-overlay"></div>
 
     <!-- HERO -->
 
@@ -509,9 +527,7 @@
 
                 <p>
 
-                    Profesyonel sosyal medya hizmetleri,
-                    hesap güvenliği ve premium danışmanlık
-                    çözümleri.
+                    
 
                 </p>
 
@@ -536,71 +552,39 @@
     </section>
 
 
-
-    <!-- FOOTER -->
-
-    <footer class="premium-footer">
-
-        <div class="footer-logo">
-
-            K'
-
-        </div>
-
-        <h3>
-
-            KAE SERVICES
-
-        </h3>
-
-        <p>
-
-            Premium Dijital Hizmet Platformu
-
-        </p>
-
-        <div class="footer-links">
-
-            <a href="index.html">
-
-                Ana Sayfa
-
-            </a>
-
-            <a href="services.html">
-
-                Hizmetler
-
-            </a>
-
-            <a href="order.html">
-
-                Sipariş
-
-            </a>
-
-        </div>
-
-        <div class="footer-line"></div>
-
-        <small>
-
-            © 2026 Kae Aizawa
-            <br>
-            
-
-        </small>
-
-    </footer>
-
-
-
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/animations.js"></script>
+<script src="assets/js/animations.js"></script>
+<script type="module" src="assets/js/index.js"></script>
+<script type="module" src="firebase/config.js"></script>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/menu.css">
-<link rel="stylesheet" href="assets/css/market.css">
+
+    <div id="sideMenu" class="side-menu">
+
+    <div class="side-header">
+        <button id="closeMenu" class="close-menu">✕</button>
+
+        <div class="profile-box">
+            <div class="profile-avatar">👤</div>
+            <h2>AizawaKae</h2>
+        </div>
+    </div>
+
+    <div class="menu-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="services.html">Hizmetler</a>
+        <a href="login.html">Giriş</a>
+        <div class="user-box" id="userBox">
+
+    <div class="user-name" id="userName">-</div>
+    <div class="user-email" id="userEmail">-</div>
+    <div class="user-balance" id="userBalance">0 ₺</div>
+
+</div>
+    </div>
+
+</div>
+
+<div id="menuOverlay" class="menu-overlay"></div>
 
 </body>
 
