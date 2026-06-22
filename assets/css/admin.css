@@ -1,0 +1,735 @@
+/*========================================
+        ADMIN.CSS V1 - PART 1
+========================================*/
+
+.admin-page{
+    min-height:100vh;
+    padding:130px 7% 60px;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:30px;
+}
+
+.admin-sidebar{
+    position:sticky;
+    top:110px;
+    height:fit-content;
+    padding:28px;
+    border-radius:24px;
+    background:linear-gradient(145deg,#181818,#0b0b0b);
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+.admin-sidebar h2{
+    color:#fff;
+    font-size:28px;
+    margin-bottom:28px;
+}
+
+.admin-btn{
+    width:100%;
+    padding:15px 18px;
+    margin-bottom:12px;
+    border:none;
+    border-radius:14px;
+    cursor:pointer;
+    text-align:left;
+    font-size:15px;
+    font-weight:700;
+    color:#ddd;
+    background:#111;
+    transition:.3s;
+}
+
+.admin-btn:hover{
+    background:#ff2020;
+    color:#fff;
+    transform:translateX(5px);
+}
+
+.admin-btn.active{
+    background:linear-gradient(135deg,#ff2020,#ff5959);
+    color:#fff;
+}
+
+.admin-btn.logout{
+    margin-top:25px;
+    background:#2a0d0d;
+    color:#ff9090;
+}
+
+.admin-btn.logout:hover{
+    background:#ff2020;
+    color:#fff;
+}
+
+.admin-content{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.admin-title h1{
+    color:#fff;
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.admin-title p{
+    color:#bdbdbd;
+}
+
+.admin-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.admin-card{
+    padding:28px;
+    border-radius:22px;
+    background:linear-gradient(145deg,#181818,#0b0b0b);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.admin-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(255,40,40,.35);
+    box-shadow:0 0 35px rgba(255,40,40,.18);
+}
+
+.admin-card h3{
+    color:#bdbdbd;
+    font-size:15px;
+    margin-bottom:12px;
+}
+
+.admin-card h2{
+    color:#fff;
+    font-size:34px;
+}
+/*========================================
+        ADMIN.CSS V1 - PART 2
+========================================*/
+
+.admin-section{
+
+    background:linear-gradient(145deg,#181818,#0b0b0b);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.30);
+
+}
+
+.admin-section h2{
+
+    color:#fff;
+
+    font-size:28px;
+
+    margin-bottom:24px;
+
+}
+
+.orders-list,
+.users-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.admin-order,
+.admin-user{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.3s;
+
+}
+
+.admin-order:hover,
+.admin-user:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(255,40,40,.30);
+
+    box-shadow:0 0 25px rgba(255,40,40,.15);
+
+}
+
+.admin-order h3,
+.admin-user h3{
+
+    color:#fff;
+
+    font-size:18px;
+
+    margin-bottom:6px;
+
+}
+
+.admin-order p,
+.admin-user p{
+
+    color:#bdbdbd;
+
+    font-size:14px;
+
+}
+
+.status{
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:800;
+
+}
+
+.status.pending{
+
+    color:#ffc107;
+
+    background:#ffc10722;
+
+}
+
+.status.success{
+
+    color:#3ddc84;
+
+    background:#3ddc8422;
+
+}
+
+.status.cancel{
+
+    color:#ff5252;
+
+    background:#ff525222;
+
+}
+
+.admin-actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.admin-actions button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:10px 14px;
+
+    border-radius:12px;
+
+    color:#fff;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.edit-btn{
+
+    background:#ff8c00;
+
+}
+
+.edit-btn:hover{
+
+    background:#ff9f1c;
+
+}
+
+.delete-btn{
+
+    background:#d62828;
+
+}
+
+.delete-btn:hover{
+
+    background:#ef233c;
+
+}
+/*========================================
+        ADMIN.CSS V1 - PART 3
+        RESPONSIVE + FINAL
+========================================*/
+
+@media (max-width:1100px){
+
+.admin-page{
+
+grid-template-columns:1fr;
+
+}
+
+.admin-sidebar{
+
+position:relative;
+
+top:0;
+
+}
+
+.admin-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:768px){
+
+.admin-page{
+
+padding:110px 18px 40px;
+
+}
+
+.admin-sidebar{
+
+padding:22px;
+
+}
+
+.admin-sidebar h2{
+
+font-size:24px;
+
+}
+
+.admin-btn{
+
+padding:14px;
+
+font-size:14px;
+
+}
+
+.admin-title h1{
+
+font-size:30px;
+
+}
+
+.admin-stats{
+
+grid-template-columns:1fr;
+
+gap:16px;
+
+}
+
+.admin-card{
+
+padding:22px;
+
+}
+
+.admin-card h2{
+
+font-size:28px;
+
+}
+
+.admin-section{
+
+padding:22px;
+
+}
+
+.admin-section h2{
+
+font-size:22px;
+
+}
+
+.admin-order,
+.admin-user{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:14px;
+
+}
+
+.admin-actions{
+
+width:100%;
+
+display:flex;
+
+justify-content:flex-end;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.admin-page{
+
+padding:100px 14px 30px;
+
+}
+
+.admin-sidebar{
+
+padding:18px;
+
+border-radius:18px;
+
+}
+
+.admin-title h1{
+
+font-size:24px;
+
+}
+
+.admin-title p{
+
+font-size:13px;
+
+}
+
+.admin-card{
+
+padding:18px;
+
+}
+
+.admin-card h3{
+
+font-size:13px;
+
+}
+
+.admin-card h2{
+
+font-size:24px;
+
+}
+
+.admin-section{
+
+padding:18px;
+
+border-radius:18px;
+
+}
+
+.admin-order,
+.admin-user{
+
+padding:16px;
+
+}
+
+.admin-order h3,
+.admin-user h3{
+
+font-size:16px;
+
+}
+
+.admin-order p,
+.admin-user p{
+
+font-size:13px;
+
+}
+
+.admin-actions{
+
+flex-direction:column;
+
+width:100%;
+
+}
+
+.admin-actions button{
+
+width:100%;
+
+}
+
+}
+
+*{
+
+box-sizing:border-box;
+
+}
+
+button,
+input,
+select{
+
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+.admin-sidebar,
+.admin-card,
+.admin-section{
+
+backdrop-filter:blur(12px);
+
+-webkit-backdrop-filter:blur(12px);
+
+}
+
+.admin-btn,
+.admin-card,
+.admin-order,
+.admin-user,
+.admin-actions button{
+
+transition:.3s ease;
+
+}
+.balance-form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.balance-form input{
+    width:100%;
+    padding:12px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.12);
+    background:#111;
+    color:#fff;
+}
+
+#addBalanceBtn{
+    width:100%;
+    padding:12px;
+    border-radius:12px;
+    border:none;
+    cursor:pointer;
+}
+.statusSelect{
+    background:#111;
+    color:#fff;
+    border:1px solid rgba(255,255,255,.12);
+    padding:10px 12px;
+    border-radius:10px;
+    outline:none;
+    cursor:pointer;
+}
+
+/* dropdown ok rengini bile yumuşatır */
+.statusSelect option{
+    background:#111;
+    color:#fff;
+}
+.update-btn{
+    background:#2b7cff;
+    color:#fff;
+    border:none;
+    padding:10px 14px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.update-btn:hover{
+    background:#1a5fd1;
+}
+.updateBtn{
+
+    background:#2563eb;
+    color:#ffffff;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.updateBtn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+.deleteBtn{
+
+    background:#dc2626;
+    color:#ffffff;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.deleteBtn:hover{
+
+    background:#b91c1c;
+
+    transform:translateY(-2px);
+
+}
+#notification-container{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:99999;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.toast{
+    width:260px;
+    padding:14px 16px;
+    border-radius:14px;
+    color:#fff;
+    backdrop-filter:blur(10px);
+    animation:slideIn .3s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toast-title{
+    font-weight:700;
+    margin-bottom:4px;
+}
+
+.toast-message{
+    font-size:13px;
+    opacity:.9;
+}
+
+/* TYPES */
+
+.toast.success{
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+}
+
+.toast.error{
+    background:linear-gradient(135deg,#ef4444,#b91c1c);
+}
+
+.toast.info{
+    background:linear-gradient(135deg,#3b82f6,#1d4ed8);
+}
+
+/* ANIMATION */
+
+@keyframes slideIn{
+    from{
+        transform:translateX(120%);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+.verifyBtn{
+    padding:10px 18px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+
+    background:linear-gradient(135deg,#1D9BF0,#1877F2);
+    color:#fff;
+
+    font-size:13px;
+    font-weight:700;
+
+    transition:.25s;
+
+    box-shadow:0 0 18px rgba(29,155,240,.35);
+}
+
+.verifyBtn:hover{
+    transform:translateY(-2px);
+
+    box-shadow:0 0 28px rgba(29,155,240,.55);
+}
+
+.verifyBtn.remove{
+    background:linear-gradient(135deg,#ff3b3b,#b80000);
+
+    box-shadow:0 0 18px rgba(255,0,0,.35);
+}
+
+.verifyBtn.remove:hover{
+    box-shadow:0 0 28px rgba(255,0,0,.55);
+}
+
+/*========== END ==========*/

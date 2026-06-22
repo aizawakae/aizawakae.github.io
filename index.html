@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kae Aizawa</title>
   
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/panel.css">
 </head>
 
 <body>
@@ -14,14 +16,22 @@
 <div class="bg-glow"></div>
 
 <header class="navbar">
-  <a href="index.html" class="logo">K'</a>
 
-  <nav>
-    <a href="#duyuru"></a>
-    <a href="#hizmetler"></a>
-    <a href="#baglantilar"></a>
-  </nav>
+    <a href="index.html" class="logo">K'</a>
+
+    <nav>
+
+        <a href="login.html" id="loginButton">Giriş Yap</a>
+
+        <div id="menuButton" class="menu-button">
+            ☰
+        </div>
+
+    </nav>
+
 </header>
+
+<div id="menuOverlay" class="menu-overlay"></div>
 
 <section class="hero">
   <div class="hero-left">
@@ -32,7 +42,7 @@
     <p></p>
 
     <div class="hero-buttons">
-      <a href="products.html" class="btn red">Hizmetleri Gör</a>
+      <a href="services.html" class="btn red">Hizmetleri Gör</a>
       <a href="#baglantilar" class="btn dark">İletişime Geç</a>
     </div>
   </div>
@@ -41,7 +51,7 @@
 
     <div class="main-card">
 
-<img src="logo.png" class="card-image">
+<img src="assets/images/logo.png" class="card-image">
 
 <span>Social Media Services</span>
 
@@ -88,7 +98,7 @@
     <div class="pulse"></div>
 
     <div>
-      <h3>AizawaStore ve AizawaDestek kanalları yakında açılacaktır.</p>
+     <h3>AizawaStore ve AizawaDestek kanalları yakında açılacaktır.</h3>
     </div>
   </div>
 </section>
@@ -149,7 +159,6 @@
   </div>
 
   <div class="link-grid">
-    <div class="link-grid">
 
 <a href="https://instagram.com/aizawakae"
 target="_blank">
@@ -178,8 +187,73 @@ WhatsApp
 <footer>
   © 2026 Kae — Social Media Services
 </footer>
+  
 
-<script src="script.js"></script>
+<div id="sideMenu" class="side-menu">
+
+    <div class="side-header">
+
+        <button id="closeMenu" class="close-menu">
+            ✕
+        </button>
+
+        <div class="profile-box">
+
+            <div class="profile-avatar">
+                👤
+            </div>
+
+            <h2 class="user-title">
+    <span id="userName">Yükleniyor...</span>
+
+    <span id="verifiedBadge" class="verified-badge" style="display:none;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3b82f6">
+            <path d="M12 2l2.3 2.1 3.1-.4 1.3 2.8 2.8 1.3-.4 3.1L22 12l-2.1 2.3.4 3.1-2.8 1.3-1.3 2.8-3.1-.4L12 22l-2.3-2.1-3.1.4-1.3-2.8-2.8-1.3.4-3.1L2 12l2.1-2.3-.4-3.1 2.8-1.3 1.3-2.8 3.1.4L12 2zm-1 13l6-6-1.4-1.4L11 12.2 8.4 9.6 7 11l4 4z"/>
+        </svg>
+    </span>
+</h2>
+
+            <p id="userEmail">Yükleniyor...</p>
+
+            <span id="premiumBadge" class="premium-badge">
+              Standart Üye
+            </span>
+            
+            <div class="balance-card">
+
+    <span>💰 Mevcut Bakiye</span>
+
+    <h2 id="userBalance">0,00 ₺</h2>
+
+</div>
+
+        </div>
+
+    </div>
+
+    <div class="menu-links">
+
+
+        <a href="services.html">📦 Hizmetler</a>
+
+        <a href="#">🛒 Siparişlerim</a>
+
+        <a href="#">🎫 Kuponlarım</a>
+
+        <a href="#">💳 Bakiye Yükle</a>
+
+    </div>
+
+    <button id="panelLogout" class="panel-logout">
+        Çıkış Yap
+    </button>
+
+</div>
+
+<script src="assets/js/script.js"></script>
+<script src="assets/js/animations.js"></script>
+<script type="module" src="assets/js/index.js"></script>
+<script type="module" src="firebase/config.js"></script>
 
 </body>
 </html>

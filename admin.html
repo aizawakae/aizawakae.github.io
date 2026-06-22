@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel | Kae</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+K'
+</a>
+
+<nav>
+
+<a href="index.html">
+Ana Sayfa
+</a>
+
+</nav>
+
+</header>
+
+<section class="admin-page">
+
+<div class="admin-sidebar">
+
+<h2>
+
+Admin Panel
+
+</h2>
+
+<button class="admin-btn active">
+
+📊 Dashboard
+
+</button>
+
+<button class="admin-btn">
+
+📦 Siparişler
+
+</button>
+
+<button class="admin-btn">
+
+👤 Kullanıcılar
+
+</button>
+
+</button>
+
+<button id="logoutBtn" class="admin-btn logout">
+
+Çıkış Yap
+
+</button>
+
+</div>
+
+<div class="admin-content">
+
+<div class="admin-title">
+
+<h1>
+
+Dashboard Panel
+
+</h1>
+
+<p>
+
+</p>
+
+</div>
+
+<div class="admin-stats">
+
+<div class="admin-card">
+
+<h3>
+
+Toplam Kullanıcı
+
+</h3>
+
+<h2 id="totalUsers">
+
+0
+
+</h2>
+
+</div>
+
+<div class="admin-card">
+
+<h3>
+
+Toplam Sipariş
+
+</h3>
+
+<h2 id="totalOrders">
+
+0
+
+</h2>
+
+</div>
+
+<div class="admin-card">
+
+<h3>
+
+Bekleyen
+
+</h3>
+
+<h2 id="pendingOrders">
+
+0
+
+</h2>
+
+</div>
+
+<div class="admin-card">
+
+<h3>
+
+Tamamlanan
+
+</h3>
+
+<h2 id="completedOrders">
+
+0
+
+</h2>
+
+</div>
+
+</div>
+
+<div class="admin-section">
+
+<h2>
+
+Son Siparişler
+
+</h2>
+
+<div id="ordersList" class="orders-list">
+
+<!-- admin.js siparişleri buraya ekleyecek -->
+
+</div>
+
+</div>
+
+<div class="admin-section">
+
+<h2>
+
+Son Kullanıcılar
+
+</h2>
+
+<div id="usersList" class="users-list">
+
+<!-- admin.js kullanıcıları buraya ekleyecek -->
+
+</div>
+
+</div>
+
+<div class="admin-section">
+
+<h2>
+
+💰 Bakiye Yükle
+
+</h2>
+
+<div class="balance-form">
+
+<input
+id="userEmail"
+type="email"
+placeholder="Mail">
+
+<input
+id="balanceAmount"
+type="number"
+placeholder="Tutar">
+
+<button
+id="addBalanceBtn"
+class="admin-btn">
+
+➕ Tamamla
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="assets/js/script.js"></script>
+<script src="assets/js/animations.js"></script>
+<script type="module" src="assets/js/admin.js"></script>
+
+</body>
+</html>
