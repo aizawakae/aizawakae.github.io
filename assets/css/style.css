@@ -1927,3 +1927,18 @@ html, body {
 img, video {
     max-width: 100%;
 }
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+.side-menu {
+    max-width: 100vw;
+    right: 0;
+}
+* {
+    outline: 1px solid red;
+}
