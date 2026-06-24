@@ -3,453 +3,1116 @@
 
 <head>
 
+
+    <!-- ========================================= -->
+<!-- FAVICON -->
+<!-- ========================================= -->
+
+<link rel="icon"
+      type="image/png"
+      href="assets/img/favicon.png">
+
+    <!-- ========================================= -->
+    <!-- META -->
+    <!-- ========================================= -->
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/menu.css">
-<link rel="stylesheet" href="assets/css/panel.css">
-<link rel="stylesheet" href="assets/css/sidebar.css">
+    <title>AizawaKae • Premium 2026</title>
 
-<link rel="stylesheet" href="assets/css/mobile.css">
+    <meta name="description"
+        content="AizawaKae Premium - Yeni nesil sosyal medya hizmetleri, premium üyelik sistemi ve gelişmiş kullanıcı deneyimi.">
+
+    <meta name="keywords"
+        content="AizawaKae, Premium, Sosyal Medya, Discord, Instagram, TikTok, YouTube">
+
+    <meta name="author"
+        content="AizawaKae">
+
+    <meta name="theme-color"
+        content="#050505">
+
+    <!-- ========================================= -->
+    <!-- FAVICON -->
+    <!-- ========================================= -->
+
+    <link rel="icon"
+        href="assets/img/logo.png">
+
+    <!-- ========================================= -->
+    <!-- GOOGLE FONT -->
+    <!-- ========================================= -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================= -->
+    <!-- ICON -->
+    <!-- ========================================= -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ========================================= -->
+    <!-- CSS -->
+    <!-- ========================================= -->
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+
 
 </head>
 
 <body>
 
-<div class="bg-glow glow-1"></div>
-<div class="bg-glow glow-2"></div>
-<div class="bg-grid"></div>
+    <!-- ========================================= -->
+    <!-- LOADER -->
+    <!-- ========================================= -->
 
-<header class="navbar">
+    <div id="loader">
 
-    <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" alt="AizawaKae">
-        <span>AizawaKae</span>
-    </a>
+        <div class="loader-logo">
 
-    <nav>
+            <img src="assets/img/logo.png"
+                alt="AizawaKae">
 
-        <a href="services.html">Hizmetler</a>
-
-        <a href="#contact">İletişim</a>
-
-        <a href="login.html" id="loginButton" class="login-btn">
-            Giriş Yap
-        </a>
-
-        <div id="menuButton" class="menu-button">
-            ☰
         </div>
 
-    </nav>
+        <div class="loader-line"></div>
 
-</header>
+    </div>
 
-<div id="menuOverlay" class="menu-overlay"></div>
+    <!-- ========================================= -->
+    <!-- BACKGROUND SYSTEM -->
+    <!-- ========================================= -->
 
-<section class="hero">
+    <div class="background-system">
 
-<div class="hero-content">
+        <div class="bg-grid"></div>
 
-<div class="hero-left">
+        <div class="bg-noise"></div>
 
-<div class="hero-badge">
+        <div class="bg-red-left"></div>
 
-<span class="dot"></span>
+        <div class="bg-red-center"></div>
 
-13+ Yıllık Sosyal Medya Deneyimi
+        <div class="bg-purple-right"></div>
 
-</div>
+        <div class="bg-light light-1"></div>
 
-<h1>
+        <div class="bg-light light-2"></div>
 
-Profesyonel
+        <div class="bg-light light-3"></div>
 
-<span>Sosyal Medya</span>
+        <div class="mouse-glow"></div>
 
-Hizmetleri
+    </div>
 
-</h1>
+    <!-- ========================================= -->
+    <!-- NAVBAR -->
+    <!-- ========================================= -->
 
-<p>
+    <header class="header">
+
+        <div class="navbar">
+
+            <!-- Logo -->
+
+            <a href="#"
+                class="logo">
+
+                <div class="logo-image">
+
+                    <img src="assets/img/logo.png"
+                        alt="AizawaKae">
+
+                </div>
+
+                <div class="logo-text">
+
+                    <h2>AizawaKae</h2>
+
+                </div>
+
+            </a>
+
+            <!-- Desktop Menu -->
+
+            <nav class="desktop-menu">
+
+                <a href="#hero"> </a>
+
+                <a href="#features"></a>
+
+                <a href="#premium"></a>
+
+                <a href="#contact"></a>
+
+            </nav>
+
+            <!-- Right -->
+
+            <div class="navbar-right">
+
+                <button class="menu-button"
+                    id="menuButton">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </button>
+
+            </div>
+
+    </header>
 
 
+<!-- ========================================= -->
+<!-- MENU -->
+<!-- ========================================= -->
 
-</p>
+<div class="menu-overlay"></div>
 
-<div class="hero-buttons">
+<aside class="menu">
 
-<a href="services.html" class="btn-primary">
+    <div class="menu-ambient"></div>
+    <div class="menu-glass"></div>
+    <div class="menu-border"></div>
+    <div class="menu-noise"></div>
+    <div class="menu-shadow"></div>
 
-Hizmetleri İncele
+    <div class="menu-content">
+
+        <!-- HEADER -->
+        <div class="menu-header">
+
+            <button class="menu-close" id="menuClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="menu-profile">
+
+                <h2>Kae Aizawa</h2>
+                <span>👑 Premium Üye</span>
+
+            </div>
+
+            <!-- BALANCE -->
+            <div class="menu-balance">
+
+                <div class="menu-balance-header">
+
+                    <div class="menu-balance-title">
+                        <i class="fa-solid fa-wallet"></i>
+                        Bakiye
+                    </div>
+
+                    <a href="wallet.html" class="menu-balance-add">
+
+    <i class="fa-solid fa-plus"></i>
 
 </a>
 
-<a href="#contact" class="btn-secondary">
+                </div>
 
-İletişime Geç
+                <div class="menu-balance-value">
+                    ₺0.00
+                </div>
 
-</a>
+        </div>
 
-</div>
+        <!-- NAV -->
+        <nav class="menu-nav">
 
-<div class="hero-trust">
+            <a href="panel.html" class="menu-link">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Panel</span>
+                <div class="hover-light"></div>
+            </a>
 
-<div class="trust-item">
+            <a href="services.html" class="menu-link">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Hizmetler</span>
+                <div class="hover-light"></div>
+            </a>
 
-<h2>PayTR
+            <a href="orders.html" class="menu-link">
+                <i class="fa-solid fa-box"></i>
+                <span>Siparişler</span>
+                <div class="hover-light"></div>
+            </a>
 
-</h2>
+        </nav>
 
-<span>PayTR alt yapısı ile maximum güven</span>
+        <!-- FOOTER -->
+        <div class="menu-footer">
 
-</div>
+<button class="menu-logout" id="logoutButton">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Çıkış Yap
+</button>
 
-<div class="trust-item">
+        </div>
 
-<h2>7/24</h2>
-
-<span>İşlem öncesi ve sonrası kesintisiz destek</span>
-
-</div>
-
-<div class="trust-item">
-
-<h2>%87</h2>
-
-<span>Müşteri memnuniyet</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-right">
-
-<div class="glass-card main-service">
-
-<div class="card-top">
-
-<div class="status">
-
-<span class="online-dot"></span>
-
-Aktif Hizmet
-
-</div>
-
-</div>
-
-<img src="assets/images/logo.png" class="hero-logo">
-
-<h3>
-
-Aizawa Media
-
-</h3>
-
-<p>
-
-
-
-</p>
-
-<div class="service-list">
-
-<div>
-
-Instagram
-
-</div>
-
-<div>
-
-TikTok
-
-</div>
-
-<div>
-
-YouTube
-
-</div>
-
-<div>
-
-Discord
-
-</div>
-
-</div>
-
-</div>
-
-<div class="floating-card card-instagram">
-
-Instagram
-
-</div>
-
-<div class="floating-card card-tiktok">
-
-TikTok
-
-</div>
-
-<div class="floating-card card-youtube">
-
-YouTube
-
-</div>
-
-<div class="floating-card card-discord">
-
-Discord
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- Premium Stats -->
-
-<section class="premium-stats">
-
-    <div class="stat-card">
-        <div class="stat-icon">🏆</div>
-        <h2>6635+</h2>
-        <p>Toplam Kullanıcı</p>
     </div>
 
-    <div class="stat-card">
-        <div class="stat-icon">🚀</div>
-        <h2>4362+</h2>
-        <p>Tamamlanan İşlem</p>
-    </div>
+</aside>
 
-    <div class="stat-card">
-        <div class="stat-icon">⭐</div>
-        <h2>%87</h2>
-        <p>Müşteri Memnuniyeti</p>
-    </div>
+    <!-- ========================================= -->
+    <!-- MOBILE MENU -->
+    <!-- ========================================= -->
 
-    <div class="stat-card">
-        <div class="stat-icon">🛡️</div>
-        <h2>7/24</h2>
-        <p>Aktif Destek</p>
-    </div>
+    <div class="mobile-overlay"
+        id="mobileOverlay"></div>
 
-</section>
+    <aside class="mobile-menu"
+        id="mobileMenu">
 
-<!-- Why -->
+        <div class="mobile-top">
 
-<section class="why-us">
+            <div class="mobile-profile">
 
-<div class="section-header">
+                <img src="assets/img/logo.png"
+                    alt="Logo">
 
-<h2>
+                <div>
 
-Neden AizawaKae?
+                    <h3>AizawaKae</h3>
 
-</h2>
+                    <span>aizawakae.com</span>
 
-</div>
+                </div>
 
-<div class="why-grid">
+            </div>
 
-<div class="why-card">
+            <button id="closeMenu">
 
-<div class="why-icon">
+                <i class="fa-solid fa-xmark"></i>
 
-🛡️
+            </button>
 
-</div>
+        </div>
 
-<h3>
+        <nav class="mobile-links">
 
-Güvenilir
+            <a href="#hero">
 
-</h3>
+                <i class="fa-solid fa-house"></i>
 
-<p>
+                Ana Sayfa
 
-PayTR alp yapısı sayesinde güvenilir bir sistem hizmet vaad ediyoruz.
+            </a>
 
-</p>
+            <a href="#features">
 
-</div>
+                <i class="fa-solid fa-layer-group"></i>
 
-<div class="why-card">
+                Hizmetler
 
-<div class="why-icon">
+            </a>
 
-⚡
+            <a href="#premium">
 
-</div>
+                <i class="fa-solid fa-gem"></i>
 
-<h3>
+                Premium
 
-Hızlı
+            </a>
 
-</h3>
+            <a href="#contact">
 
-<p>
+                <i class="fa-solid fa-envelope"></i>
 
-Mümkün olan en kısa sürede siparişlerinizi teslim ediyoruz.
+                İletişim
 
-</p>
+            </a>
 
-</div>
+        </nav>
 
-<div class="why-card">
+    </aside>
 
-<div class="why-icon">
+    <!-- ========================================= -->
+    <!-- HERO -->
+    <!-- ========================================= -->
 
-💬
+    <main>
 
-</div>
+        <section
+            class="hero"
+            id="hero">
 
-<h3>
+            <div class="container">
 
-İletişim
+                <div class="hero-wrapper">
 
-</h3>
+                    <!-- Left -->
 
-<p>
+                    <div class="hero-left">
 
-İşlem öncesi ve sonrası kesintisiz destek sağlıyoruz.
+                        <div class="premium-badge">
 
-</p>
+                            👑 aizawakae.com
 
-</div>
+                        </div>
 
-<div class="why-card">
+                        <h1>
 
-<div class="why-icon">
+                            Sosyal Medyada
 
-👑
+                            <span>
 
-</div>
+                                Yeni Nesil Güç
 
-<h3>
+                            </span>
 
-Kalite
+                        </h1>
 
-</h3>
 
-<p>
+                        <div class="hero-buttons">
 
-Premium hizmetlerimiz ile sizi daha üst yerlere çıkmanızı sağlıyoruz.
+                            <a href="services.html" class="primary-btn">
 
-</p>
+                            <i class="fa-solid fa-rocket"></i>
 
-</div>
+                               Hizmetler
 
-</div>
+                             </a>
 
-</section>
+                            <a href="#premium"
+                                class="secondary-btn">
 
+                                <i class="fa-solid fa-gem"></i>
 
+                                Premium Paket
 
-<!-- Banner -->
+                            </a>
 
-<section class="premium-banner">
+                        </div>
 
-<div class="banner-content">
 
-<span>
+                            <!-- Floating Cards -->
 
-AIZAWAKAE
+                            <div class="floating-card floating-card-1">
 
-</span>
+                                <i class="fa-solid fa-fire"></i>
 
-<h2>
+                                <span>Trend</span>
 
-Profesyonel Sosyal Medya Hizmetleri
+                            </div>
 
-</h2>
+                            <div class="floating-card floating-card-2">
 
-<p>
+                                <i class="fa-solid fa-chart-line"></i>
 
-Instagram, TikTok, YouTube ve diğer platformlarda kaliteli çözümler.
+                                <span>Growth</span>
 
-</p>
+                            </div>
 
-<a href="services.html" class="banner-button">
+                            <div class="floating-card floating-card-3">
 
-Hemen Başla
+                                <i class="fa-solid fa-star"></i>
 
-</a>
+                                <span>Premium</span>
 
-</div>
+                            </div>
 
-</section>
+                        </div>
 
-<div id="sideMenu" class="side-menu">
+                    </div>
 
-    <div class="side-header">
+                </div>
 
-        <button id="closeMenu" class="close-menu">
-            ✕
+            </section>
+
+            <!-- ========================================= -->
+            <!-- FEATURES -->
+            <!-- ========================================= -->
+
+            <section
+                class="features"
+                id="features">
+
+                <div class="container">
+
+                    <div class="section-header">
+
+                        <span class="section-tag">
+
+                            Hizmetlerimiz
+
+                        </span>
+
+                        <h2>
+                            Premium Deneyim
+
+                        </h2>
+
+                    </div>
+
+                    <div class="features-grid">
+
+                        <!-- Card -->
+
+                        <div class="feature-card">
+
+                            <div class="feature-icon">
+
+                                <i class="fa-solid fa-rocket"></i>
+
+                            </div>
+
+                            <h3>
+
+                                Hızlı Teslimat
+
+                            </h3>
+
+                            <p>
+
+                                Siparişler otomatik olarak işlenir
+                                ve mümkün olan en kısa sürede teslim edilir.
+
+                            </p>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="feature-card">
+
+                            <div class="feature-icon">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                            </div>
+
+                            <h3>
+
+                                Güvenli Altyapı
+
+                            </h3>
+
+                            <p>
+
+                                PayTR güvenli ödeme yöntemiyle
+                                güvenli ve sorunsuz bir ödeme deneyimi.
+
+                            </p>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="feature-card">
+
+                            <div class="feature-icon">
+
+                                <i class="fa-solid fa-layer-group"></i>
+
+                            </div>
+
+                            <h3>
+
+                                Tek Panel Yönetimi
+
+                            </h3>
+
+                            <p>
+
+                                Tüm hizmetleri tek bir panel üzerinden
+                                kolayca yönetebilirsiniz.
+
+                            </p>
+
+                        </div>
+                                                <!-- Card -->
+
+                        <div class="feature-card">
+
+                            <div class="feature-icon">
+
+                                <i class="fa-solid fa-gauge-high"></i>
+
+                            </div>
+
+                            <h3>
+
+                                Maksimum Performans
+
+                            </h3>
+
+                            <p>
+
+                                Güçlü altyapımız sayesinde yüksek trafik altında
+                                bile kesintisiz ve hızlı hizmet deneyimi sunuyoruz.
+
+                            </p>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="feature-card">
+
+                            <div class="feature-icon">
+
+                                <i class="fa-solid fa-headset"></i>
+
+                            </div>
+
+                            <h3>
+
+                                7/24 Destek
+
+                            </h3>
+
+                            <p>
+
+                                İşlem öncesi ve sonrası kesintisiz destek sağlamaktayız.
+
+                            </p>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="feature-card">
+
+                            <div class="feature-icon">
+
+                                <i class="fa-solid fa-chart-simple"></i>
+
+                            </div>
+
+                            <h3>
+
+                                Canlı İstatistikler
+
+                            </h3>
+
+                            <p>
+
+                                Siparişlerinizi, harcamalarınızı ve gelişiminizi
+                                gerçek zamanlı olarak takip edin.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================= -->
+            <!-- PREMIUM -->
+            <!-- ========================================= -->
+
+            <section
+                class="premium"
+                id="premium">
+
+                <div class="container">
+
+                    <div class="premium-wrapper">
+
+                        <!-- Left -->
+
+                        <div class="premium-left">
+
+                            <span class="section-tag">
+
+                                Premium 
+
+                            </span>
+
+                            <h2>
+
+                                Premium Üyelik ile
+                                Sınırları Kaldır.
+
+                            </h2>
+
+                            <p>
+
+                                Aizawa+ ile daha hızlı sipariş,
+                                gelişmiş panel özellikleri,
+                                özel kampanyalar,
+                                öncelikli destek
+                                ve gelecekteki birçok yeniliğe
+                                erken erişim sağlar.
+
+                            </p>
+
+                            <div class="premium-list">
+
+                                <div class="premium-item">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Öncelikli Sipariş İşleme
+
+                                </div>
+
+                                <div class="premium-item">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Özel Premium Rozeti
+
+                                </div>
+
+                                <div class="premium-item">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Gelecek Güncellemelere Erken Erişim
+
+                                </div>
+
+                                <div class="premium-item">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Premium Destek Sistemi
+
+                                </div>
+
+                            </div>
+
+                            <div class="premium-buttons">
+
+                                <a class="primary-btn disabled">
+                                    Premium (bakımda)
+                               </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Right -->
+
+                        <div class="premium-right">
+
+                            <div class="membership-card">
+
+                                <div class="membership-header">
+
+                                    <div>
+
+                                        <span>
+
+                                            PREMIUM
+
+                                        </span>
+
+                                        <h3>
+
+                                    ︎︎︎︎⠀︎⠀⠀︎︎⠀⠀Aizawa+
+
+                                        </h3>
+
+                                    </div>
+
+                                    <i class="fa-solid fa-crown"></i>
+
+                                </div>
+
+                                <div class="membership-price">
+
+                                    <h2>
+
+                                        ₺1250
+
+                                    </h2>
+
+                                    <span>
+
+                                        / Ay
+
+                                    </span>
+
+                                </div>
+
+                                <div class="membership-features">
+
+                                    <div>
+
+                                        <i class="fa-solid fa-check"></i>
+
+                                        Premium Rozet
+
+                                    </div>
+
+                                    <div>
+
+                                        <i class="fa-solid fa-check"></i>
+
+                                        Öncelikli Destek
+
+                                    </div>
+
+                                    <div>
+
+                                        <i class="fa-solid fa-check"></i>
+
+                                        Özel Kampanyalar
+
+                                    </div>
+
+                                    <div>
+
+                                        <i class="fa-solid fa-check"></i>
+
+                                        Beta Özellikleri
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Floating Stats -->
+
+                            <div class="mini-card mini-card-users">
+
+                                <i class="fa-solid fa-users"></i>
+
+                                <div>
+
+                                    <h4>
+
+                                        13.284
+
+                                    </h4>
+
+                                    <span>
+
+                                        Aktif Kullanıcı
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="mini-card mini-card-orders">
+
+                                <i class="fa-solid fa-bolt"></i>
+
+                                <div>
+
+                                    <h4>
+
+                                        7439
+
+                                    </h4>
+
+                                    <span>
+
+                                        Sipariş
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="mini-card mini-card-rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                <div>
+
+                                    <h4>
+
+                                        %87
+
+                                    </h4>
+
+                                    <span>
+
+                                        Müşteri Memnuniyeti
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================= -->
+            <!-- CTA -->
+            <!-- ========================================= -->
+
+            <section class="cta">
+
+                <div class="container">
+
+                    <div class="cta-box">
+
+                        <span>
+
+                            AIZAWAKAE
+
+                        </span>
+
+                        <h2>
+
+                            Dijital gücünü zirveye taşı
+
+                        </h2>
+
+                        <div class="cta-buttons">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+                        <!-- ========================================= -->
+            <!-- FOOTER -->
+            <!-- ========================================= -->
+
+            <footer
+                class="footer"
+                id="contact">
+
+                <div class="container">
+
+                    <div class="footer-top">
+
+                        <!-- Brand -->
+
+                        <div class="footer-brand">
+
+                            <div class="footer-logo">
+
+                                <img src="assets/img/logo.png"
+                                    alt="AizawaKae">
+
+                            </div>
+
+                            <h2>
+
+                                AizawaKae
+
+                            </h2>
+
+                            <div class="footer-social">
+
+                                <a href="https://instagram.com/aizawakae"
+                                
+
+                                    <i class="fab fa-instagram"></i>
+
+                                </a>
+
+                                <a href="https://www.tiktok.com/@aizawakae"
+                                
+
+                                    <i class="fab fa-tiktok"></i>
+
+                                </a>
+
+                                <a href="https://discord.com/users/457298497650163733"
+
+                                    <i class="fab fa-discord"></i>
+
+                                </a>
+
+                                <a href="https://www.youtube.com/@aizawakae"
+
+                                    <i class="fab fa-youtube"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Menu -->
+
+                        <div class="footer-links">
+
+                            <h3>
+
+                                Menü
+
+                            </h3>
+
+                            </a>
+
+                             <a href="services.html">
+                                      Services
+                             </a>
+
+                            </a>
+
+                            <a href="#premium">
+
+                                Premium
+
+                            </a>
+
+                        </div>
+
+                        <!-- Contact -->
+
+                        <div class="footer-links">
+
+                            <h3>
+
+                                Mail
+
+                            </h3>
+
+                            <a href="mailto:aizawakae@gmail.com">
+
+                                aizawakae@gmail.com
+
+                            </a>
+
+                            <a href="tel:+901234567890">
+
+                                
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Footer Bottom -->
+
+                    <div class="footer-bottom">
+
+                        <div class="footer-line"></div>
+
+                        <div class="footer-bottom-wrapper">
+
+                            <p>
+
+                                © 2026 AizawaKae.
+                                Tüm hakları saklıdır.
+
+                            </p>
+
+                            <div class="footer-bottom-links">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </main>
+
+        <!-- ========================================= -->
+        <!-- FLOATING ELEMENTS -->
+        <!-- ========================================= -->
+
+        <div class="ambient-glow glow-one"></div>
+
+        <div class="ambient-glow glow-two"></div>
+
+        <div class="ambient-glow glow-three"></div>
+
+        <div class="ambient-glow glow-four"></div>
+
+        <div class="ambient-glow glow-five"></div>
+
+        <!-- ========================================= -->
+        <!-- CURSOR -->
+        <!-- ========================================= -->
+
+        <div class="cursor-glow"></div>
+
+        <div class="cursor-dot"></div>
+
+        <!-- ========================================= -->
+        <!-- SCROLL TOP -->
+        <!-- ========================================= -->
+
+        <button
+            id="scrollTop"
+            class="scroll-top">
+
+            <i class="fa-solid fa-arrow-up"></i>
+
         </button>
 
-        <div class="profile-box">
+        <!-- ========================================= -->
+        <!-- BACKGROUND PARTICLES -->
+        <!-- ========================================= -->
 
-            <div class="profile-avatar">
-                👤
-            </div>
+        <div class="particles">
 
-            <h2 class="user-title">
-                <span id="userName">Yükleniyor...</span>
-
-                <span id="verifiedBadge" class="verified-badge" style="display:none;">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3b82f6">
-                        <path d="M12 2l2.3 2.1 3.1-.4 1.3 2.8 2.8 1.3-.4 3.1L22 12l-2.1 2.3.4 3.1-2.8 1.3-1.3 2.8-3.1-.4L12 22l-2.3-2.1-3.1.4-1.3-2.8-2.8-1.3.4-3.1L2 12l2.1-2.3-.4-3.1 2.8-1.3 1.3-2.8 3.1.4L12 2zm-1 13l6-6-1.4-1.4L11 12.2 8.4 9.6 7 11l4 4z"/>
-                    </svg>
-                </span>
-            </h2>
-
-            <p id="userEmail">Yükleniyor...</p>
-
-            <span id="premiumBadge" class="premium-badge">
-                Standart Üye
-            </span>
-
-            <div class="balance-card">
-                <span>💰 Mevcut Bakiye</span>
-                <h2 id="userBalance">0,00 ₺</h2>
-            </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
         </div>
 
-    </div>
+        <!-- ========================================= -->
+        <!-- PAGE OVERLAY -->
+        <!-- ========================================= -->
 
-    <div class="menu-links">
+        <div class="page-gradient"></div>
 
-        <a href="services.html">📦 Hizmetler</a>
+        <div class="page-vignette"></div>
 
-        <a href="#">🛒 Siparişlerim</a>
+        <!-- ========================================= -->
+        <!-- MENU OVERLAY -->
+        <!-- ========================================= -->
 
-        <a href="#">🎫 Kuponlarım</a>
+        <div id="menuOverlay"></div>
 
-        <a href="#">💳 Bakiye Yükle</a>
+<aside id="sideMenu">
 
-    </div>
+</aside>
 
-    <button id="panelLogout" class="panel-logout">
-        Çıkış Yap
-    </button>
+        <!-- ========================================= -->
+        <!-- JAVASCRIPT -->
+        <!-- ========================================= -->
 
-</div>
-
-<script src="assets/js/script.js"></script>
-<script src="assets/js/animations.js"></script>
 <script type="module" src="assets/js/index.js"></script>
-<script type="module" src="firebase/config.js"></script>
+<script type="module" src="assets/js/menu.js"></script>
 
-</body>
+
+
+    </body>
+
 </html>

@@ -4,94 +4,391 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kayıt Ol | AizawaKae</title>
+    <title>Kayıt Ol • AizawaKae</title>
 
-    <link rel="icon" href="assets/images/favicon.png">
+    <meta name="description" content="AizawaKae Premium kayıt ekranı.">
+    <meta name="theme-color" content="#050505">
 
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/auth.css">
 
 </head>
 
 <body>
 
-<div class="bg-glow"></div>
+    <!-- BACKGROUND (AYNEN KORUNDU) -->
 
-<div class="cursor-glow"></div>
+    <div class="background-system">
 
-<div class="login-wrapper">
+        <div class="bg-grid"></div>
+        <div class="bg-noise"></div>
 
-    <div class="logo-box">
+        <div class="bg-red-left"></div>
+        <div class="bg-red-center"></div>
+        <div class="bg-purple-right"></div>
 
-        <img src="assets/images/logo.png" class="logo" alt="Logo">
+        <div class="bg-light light-1"></div>
+        <div class="bg-light light-2"></div>
+        <div class="bg-light light-3"></div>
 
     </div>
 
-    <div class="login-card">
+    <div class="page-gradient"></div>
+    <div class="page-vignette"></div>
 
-        <h1>Kayıt Ol</h1>
+    <div class="ambient-glow glow-one"></div>
+    <div class="ambient-glow glow-two"></div>
+    <div class="ambient-glow glow-three"></div>
+    <div class="ambient-glow glow-four"></div>
+    <div class="ambient-glow glow-five"></div>
 
-        <p>Yeni hesabınızı oluşturun.</p>
+    <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
 
-        <form id="registerForm">
+    <div class="mouse-glow"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-glow"></div>
 
-            <div id="messageBox" class="message-box"></div>
+    <!-- MAIN WRAPPER -->
 
-            <input
-                type="text"
-                id="name"
-                placeholder="Ad Soyad"
-                required
-            >
+    <main class="login-page">
 
-            <input
-                type="email"
-                id="email"
-                placeholder="E-posta"
-                required
-            >
+        <div class="container">
 
-            <input
-                type="password"
-                id="password"
-                placeholder="Şifre"
-                required
-            >
+            <div class="login-wrapper">
 
-            <input
-                type="password"
-                id="password2"
-                placeholder="Şifre Tekrar"
-                required
-            >
+                <!-- LEFT SIDE (AYNEN KOPYA) -->
 
-            <button type="submit">
+                <section class="login-left">
 
-                Kayıt Ol
+                    <a href="index.html" class="login-logo">
 
-            </button>
+                        <div class="logo-image">
+                            <img src="assets/img/logo.png" alt="Logo">
+                        </div>
 
-        </form>
+                        <div class="logo-text">
+                            <h2>AizawaKae</h2>
+                         
+                        </div>
 
-        <div class="links">
+                    </a>
 
-            <a href="login.html">
+                    <div class="login-badge">
 
-                Zaten hesabın var mı? Giriş Yap
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Premium Servis</span>
 
-            </a>
+                    </div>
+
+                    <h1>
+                        
+                        <span>Hoş Geldin.</span>
+                    </h1>
+
+                    <div class="login-info">
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-lock"></i>
+                            <div>
+                                <h3>256 Bit Güvenlik</h3>
+                             
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <h3>Hızlı Kayıt</h3>
+                                
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-crown"></i>
+                            <div>
+                                <h3>Premium Sistem</h3>
+                             
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                                <!-- RIGHT -->
+
+                <section class="login-right">
+
+                    <div class="login-card">
+
+                        <div class="login-card-top">
+
+                            <div class="section-tag">
+
+                                Kayıt Ol
+
+                            </div>
+
+                            <h2>
+
+                                Hesap Oluştur
+
+                            </h2>
+
+                            <p>
+
+                                Devam etmek için
+                                aşağıdaki bilgileri doldur.
+
+                            </p>
+
+                        </div>
+
+                        <form
+                            id="registerForm"
+                            autocomplete="off">
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    Kullanıcı Adı
+
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-user"></i>
+
+                                    <input
+                                        type="text"
+                                        id="regUsername"
+                                        placeholder="Kullanıcı adı"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    E-Posta
+
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-envelope"></i>
+
+                                    <input
+                                        type="email"
+                                        id="regEmail"
+                                        placeholder="E-Posta"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    Şifre
+
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-lock"></i>
+
+                                    <input
+                                        type="password"
+                                        id="regPassword"
+                                        placeholder="Şifre"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    Şifre Tekrar
+
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-lock"></i>
+
+                                    <input
+                                        type="password"
+                                        id="regPassword2"
+                                        placeholder="Şifre Tekrar"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                            <div class="login-options">
+
+                                <label class="remember-me">
+
+                                    <input
+                                        type="checkbox"
+                                        id="terms"
+                                        required>
+
+                                    <span></span>
+
+                                    Kullanım Şartlarını Kabul Ediyorum
+
+                                </label>
+
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="login-button">
+
+                                <i class="fa-solid fa-user-plus"></i>
+
+                                <span>Hesap Oluştur</span>
+
+                            </button>
+
+                        </form>
+
+                        <div class="login-divider">
+
+                            <span>veya</span>
+
+                        </div>
+
+                        <div class="register-box">
+
+                            <p>
+
+                                Zaten hesabın var mı?
+
+                            </p>
+
+                            <a href="login.html">
+
+                                Giriş Yap
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Floating Cards -->
+
+                    <div class="floating-login-card card-one">
+
+                        <i class="fa-solid fa-user-shield"></i>
+
+                        <div>
+
+                            <h4>100% Güvenli</h4>
+
+                            <span>Firebase Protected</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-login-card card-two">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <div>
+
+                            <h4>Premium</h4>
+
+                            <span>Unlimited Access</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-login-card card-three">
+
+                        <i class="fa-solid fa-fire"></i>
+
+                        <div>
+
+                            <h4>Aktif Sistem</h4>
+
+                            <span>Online 7/24</span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
 
         </div>
 
+    </main>
+
+    <!-- Loading -->
+
+    <div id="loader">
+
+        <div class="loader-logo">
+
+            <img src="assets/img/logo.png"
+                 alt="Logo">
+
+        </div>
+
+        <div class="loader-line"></div>
+
     </div>
 
-</div>
+    <!-- Scroll Top -->
 
-<script src="assets/js/script.js"></script>
-<script src="assets/js/animations.js"></script>
-<script type="module" src="assets/js/register.js"></script>
+    <button
+        class="scroll-top"
+        id="scrollTop">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- Scripts -->
+
+    <script type="module" src="./assets/js/auth.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
 
 </body>
 
