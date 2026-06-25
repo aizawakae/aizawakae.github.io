@@ -707,11 +707,14 @@
 
     .menu{
 
-        width:360px;
+       width:80%;
+
+       max-width:360px;
 
     }
 
 }
+
 /*==========================================================
     AIZAWAKAE MOBILE.CSS
     PART 3
