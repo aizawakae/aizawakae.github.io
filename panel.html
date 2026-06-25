@@ -3,664 +3,105 @@
 
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ========================================= -->
-<!-- FAVICON -->
-<!-- ========================================= -->
+<title>Panel • AizawaKae</title>
 
-<link rel="icon"
-      type="image/png"
-      href="assets/img/favicon.png">
+<link rel="icon" href="assets/img/favicon.png">
 
-    <!-- ========================================= -->
-    <!-- META -->
-    <!-- ========================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <title>Panel • AizawaKae</title>
-
-    <meta name="description"
-        content="AizawaKae Premium Kullanıcı Paneli">
-
-    <meta name="theme-color"
-        content="#050505">
-
-    <!-- ========================================= -->
-    <!-- FAVICON -->
-    <!-- ========================================= -->
-
-    <link rel="icon"
-        href="assets/img/logo.png">
-
-    <!-- ========================================= -->
-    <!-- GOOGLE FONT -->
-    <!-- ========================================= -->
-
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- ========================================= -->
-    <!-- FONT AWESOME -->
-    <!-- ========================================= -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- ========================================= -->
-    <!-- CSS -->
-    <!-- ========================================= -->
-
+<link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="assets/css/panel.css">
 <link rel="stylesheet" href="assets/css/menu.css">
 <link rel="stylesheet" href="assets/css/mobile.css">
 
 </head>
 
-    <body data-page="home">
+<body>
 
-    <!-- ========================================= -->
-    <!-- LOADER -->
-    <!-- ========================================= -->
+<!-- ========================================= -->
+<!-- LOADER -->
+<!-- ========================================= -->
 
-    <div id="loader">
+<div id="loader">
 
-        <div class="loader-logo">
+    <div class="loader-logo">
+        <img src="assets/img/logo.png" alt="AizawaKae">
+    </div>
 
-            <img src="assets/img/logo.png"
-                alt="AizawaKae">
+    <div class="loader-line"></div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- BACKGROUND -->
+<!-- ========================================= -->
+
+<div class="background-system">
+
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+
+    <div class="bg-red-left"></div>
+    <div class="bg-red-center"></div>
+    <div class="bg-purple-right"></div>
+
+    <div class="bg-light light-1"></div>
+    <div class="bg-light light-2"></div>
+    <div class="bg-light light-3"></div>
+
+    <div class="mouse-glow"></div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- NAVBAR (INDEX İLE %100 AYNI OLACAK) -->
+<!-- ========================================= -->
+
+<header class="header">
+
+    <div class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-image">
+                <img src="assets/img/logo.png" alt="AizawaKae">
+            </div>
+
+            <div class="logo-text">
+                <h2>AizawaKae</h2>
+            </div>
+
+        </a>
+
+        <div class="navbar-right">
+
+            <button class="menu-button" id="menuButton">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
 
         </div>
 
-        <div class="loader-line"></div>
-
     </div>
 
-    <!-- ========================================= -->
-    <!-- BACKGROUND -->
-    <!-- ========================================= -->
+</header>
 
-    <div class="background-system">
+<!-- ========================================= -->
+<!-- MENU (INDEX İLE BİREBİR AYNI OLMALI) -->
+<!-- ========================================= -->
 
-        <div class="bg-grid"></div>
-
-        <div class="bg-noise"></div>
-
-        <div class="bg-red-left"></div>
-
-        <div class="bg-red-center"></div>
-
-        <div class="bg-purple-right"></div>
-
-        <div class="bg-light light-1"></div>
-
-        <div class="bg-light light-2"></div>
-
-        <div class="bg-light light-3"></div>
-
-        <div class="mouse-glow"></div>
-
-    </div>
-
-    <!-- ========================================= -->
-    <!-- CURSOR -->
-    <!-- ========================================= -->
-
-    <div class="cursor-glow"></div>
-
-    <div class="cursor-dot"></div>
-
-    <!-- ========================================= -->
-    <!-- AMBIENT GLOW -->
-    <!-- ========================================= -->
-
-    <div class="ambient-glow glow-one"></div>
-
-    <div class="ambient-glow glow-two"></div>
-
-    <div class="ambient-glow glow-three"></div>
-
-    <div class="ambient-glow glow-four"></div>
-
-    <div class="ambient-glow glow-five"></div>
-
-    <!-- ========================================= -->
-    <!-- PARTICLES -->
-    <!-- ========================================= -->
-
-    <div class="particles">
-
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-
-    </div>
-
-    <!-- ========================================= -->
-    <!-- PAGE EFFECT -->
-    <!-- ========================================= -->
-
-    <div class="page-gradient"></div>
-
-    <div class="page-vignette"></div>
-
-    <!-- ========================================= -->
-    <!-- SCROLL TOP -->
-    <!-- ========================================= -->
-
-    <button id="scrollTop"
-        class="scroll-top">
-
-        <i class="fa-solid fa-arrow-up"></i>
-
-    </button>
-
-    <!-- ========================================= -->
-    <!-- MAIN -->
-    <!-- ========================================= -->
-
-    <main class="panel-page">
-
-        <!-- ========================================= -->
-        <!-- PANEL HEADER -->
-        <!-- ========================================= -->
-
-        <header class="panel-header">
-
-            <div class="panel-header-left">
-
-                <a href="index.html"
-                    class="panel-logo">
-
-                    <img src="assets/img/logo.png"
-                        alt="AizawaKae">
-
-                    <div>
-
-                        <h2>AizawaKae</h2>
-
-                        <span>Panel</span>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-            <div class="panel-header-right">
-
-                <button class="notification-button">
-
-                    <i class="fa-solid fa-bell"></i>
-
-                </button>
-
-<button class="settings-button" id="menuButton">
-    <i class="fa-solid fa-gear"></i>
-</button>
-
-            </div>
-
-        </header>
-
-        <!-- ========================================= -->
-        <!-- PANEL CONTENT -->
-        <!-- ========================================= -->
-
-        <section class="panel-container">
-                        <!-- ========================================= -->
-            <!-- LEFT SIDE -->
-            <!-- ========================================= -->
-
-            <aside class="panel-sidebar">
-
-                <!-- Profile -->
-
-                <div class="profile-card">
-
-                    <div class="profile-avatar">
-
-                        <img src="assets/img/logo.png"
-                            alt="Avatar">
-
-                        <span class="online-status"></span>
-
-                    </div>
-
-                    <h3 id="profileUsername">
-
-                        Yükleniyor...
-
-                    </h3>
-
-                    <p id="profileEmail">
-
-                        loading...
-
-                    </p>
-
-                    <div class="profile-badge">
-
-                        <i class="fa-solid fa-crown"></i>
-
-                        <span id="profileRank">
-
-                            Standart Üye
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-                <!-- Navigation -->
-
-                <nav class="panel-nav">
-
-<button class="nav-item active" onclick="location.href='index.html'">
-    <i class="fa-solid fa-house"></i>
-    <span>Anasayfa</span>
-</button>
-
-<button class="nav-item" onclick="location.href='orders.html'">
-    <i class="fa-solid fa-cart-shopping"></i>
-    <span>Siparişlerim</span>
-</button>
-
-                </nav>
-
-                <!-- Logout -->
-
-                <button
-                    class="logout-button"
-                    id="logoutButton">
-
-                    <i class="fa-solid fa-right-from-bracket"></i>
-
-                    Çıkış Yap
-
-                </button>
-
-            </aside>
-
-            <!-- ========================================= -->
-            <!-- RIGHT SIDE -->
-            <!-- ========================================= -->
-
-            <div class="panel-content">
-
-                <!-- Welcome -->
-
-                <section class="welcome-card">
-
-                    <div>
-
-                        <span>
-
-                            Hoş Geldin 
-
-                        </span>
-
-                        <h1 id="welcomeUser">
-
-                            Yükleniyor...
-
-                        </h1>
-
-                    </div>
-
-                </section>
-
-                <!-- Stats -->
-
-                <section class="stats-grid">
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-
-                            <i class="fa-solid fa-wallet"></i>
-
-                        </div>
-
-                        <div>
-
-                            <span>Bakiye</span>
-
-                            <h2 id="userBalance">
-
-                                ₺0
-
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-
-                            <i class="fa-solid fa-cart-shopping"></i>
-
-                        </div>
-
-                        <div>
-
-                            <span>Toplam Sipariş</span>
-
-                            <h2 id="totalOrders">
-
-                                0
-
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-
-                            <i class="fa-solid fa-bolt"></i>
-
-                        </div>
-
-                        <div>
-
-                            <span>Aktif Sipariş</span>
-
-                            <h2 id="activeOrders">
-
-                                0
-
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-
-                            <i class="fa-solid fa-crown"></i>
-
-                        </div>
-
-                        <div>
-
-                            <span>Üyelik</span>
-
-                            <h2 id="membershipType">
-
-                                Standart
-
-                            </h2>
-
-                </section>
-
-                <!-- Quick Actions -->
-
-                <section class="quick-actions">
-
-                    <button class="action-card">
-
-                        <i class="fa-solid fa-plus"></i>
-
-                        <span>Yeni Sipariş</span>
-
-                    </button>
-
-                    <button class="action-card">
-
-                        <i class="fa-solid fa-credit-card"></i>
-
-                        <span>Bakiye Yükle</span>
-
-                    </button>
-
-                </section>
-                                <!-- ========================================= -->
-                <!-- DASHBOARD GRID -->
-                <!-- ========================================= -->
-
-                <section class="dashboard-grid">
-
-                    <!-- ========================================= -->
-                    <!-- RECENT ORDERS -->
-                    <!-- ========================================= -->
-
-                    <div class="dashboard-card orders-card">
-
-                        <div class="card-header">
-
-                            <div>
-
-                                <h2>Son Siparişler</h2>
-
-                            </div>
-
-                            <a href="#">
-
-                                Tümünü Gör
-
-                            </a>
-
-                        </div>
-
-                        <div class="orders-table">
-
-                            <div class="table-head">
-
-                                <span>Hizmet</span>
-
-                                <span>Durum</span>
-
-                                <span>Tutar</span>
-
-                            </div>
-
-                            <div id="ordersContainer">
-
-                                <div class="table-row">
-
-                                    <span>-</span>
-
-                                    <span class="status waiting">
-
-                                        
-
-                                    </span>
-
-                                    <span>₺0</span>
-
-                                </div>
-
-                                <div class="table-row">
-
-                                    <span>-</span>
-
-                                    <span class="status progress">
-
-                                        
-
-                                    </span>
-
-                                    <span>₺0</span>
-
-                                </div>
-
-                                <div class="table-row">
-
-                                    <span>-</span>
-
-                                    <span class="status completed">
-
-                                        
-
-                                    </span>
-
-                                    <span>₺0</span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- ========================================= -->
-                    <!-- ACCOUNT -->
-                    <!-- ========================================= -->
-
-                    <div class="dashboard-card account-card">
-
-                        <div class="card-header">
-
-                            <div>
-
-                                <span>Hesap</span>
-
-                                <h2>Bilgilerim</h2>
-
-                            </div>
-
-                        </div>
-
-                        <div class="account-list">
-
-                            <div class="account-item">
-
-                                <i class="fa-solid fa-user"></i>
-
-                                <div>
-
-                                    <span>Kullanıcı Adı</span>
-
-                                    <strong id="accountUsername">
-
-                                        Yükleniyor...
-
-                                    </strong>
-
-                                </div>
-
-                            </div>
-
-                            <div class="account-item">
-
-                                <i class="fa-solid fa-envelope"></i>
-
-                                <div>
-
-                                    <span>E-Posta</span>
-
-                                    <strong id="accountEmail">
-
-                                        loading...
-
-                                    </strong>
-
-                                </div>
-
-                            </div>
-
-                            <div class="account-item">
-
-                                <i class="fa-solid fa-crown"></i>
-
-                                <div>
-
-                                    <span>Üyelik</span>
-
-                                    <strong id="accountMembership">
-
-                                        Standart Üye
-
-                                    </strong>
-
-                                </div>
-
-                            </div>
-
-                            <div class="account-item">
-
-                                <i class="fa-solid fa-calendar"></i>
-
-                                <div>
-
-                                    <span>Kayıt Tarihi</span>
-
-                                    <strong id="accountCreated">
-
-                                        --
-
-                                    </strong>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-
-                <!-- ========================================= -->
-                <!-- SUPPORT -->
-                <!-- ========================================= -->
-
-                <section class="support-section">
-
-                    
-
-                        <div class="card-header">
-
-                            <div>
-
-                                <span></span>
-
-                              
-
-                            </div>
-
-                        </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-                <!-- ========================================= -->
+<!-- ========================================= -->
 <!-- MENU -->
 <!-- ========================================= -->
 
@@ -717,9 +158,9 @@
         <!-- NAV -->
         <nav class="menu-nav">
 
-            <a href="panel.html" class="menu-link">
+            <a href="index.html" class="menu-link">
                 <i class="fa-solid fa-table-columns"></i>
-                <span>Panel</span>
+                <span>Anasayfa</span>
                 <div class="hover-light"></div>
             </a>
 
@@ -737,16 +178,331 @@
 
         </nav>
 
+        <!-- FOOTER -->
+        <div class="menu-footer">
+
+<button class="menu-logout" id="logoutButton">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Çıkış Yap
+</button>
+
+        </div>
+
+    </div>
+
+</aside>
+
+<!-- ========================================= -->
+<!-- PANEL START -->
+<!-- ========================================= -->
+
+<main class="panel-page">
+    
+    <!-- ========================================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================================= -->
+
+    <section class="panel-container">
+
+        <aside class="panel-sidebar">
+
+            <div class="profile-card">
+
+                <div class="profile-avatar">
+
+                    <img src="assets/img/logo.png" alt="Avatar">
+
+                    <span class="online-status"></span>
+
+                </div>
+
+                <h3 id="profileUsername">Yükleniyor...</h3>
+
+                <p id="profileEmail">loading...</p>
+
+                <div class="profile-badge">
+
+                    <i class="fa-solid fa-crown"></i>
+
+                    <span id="profileRank">Standart Üye</span>
+
+                </div>
+
+            </div>
+
+            </nav>
+
+        </aside>
+
+        <!-- ========================================= -->
+        <!-- RIGHT CONTENT START -->
+        <!-- ========================================= -->
+
+        <section class="panel-content">
+            <!-- ========================================= -->
+<!-- WELCOME -->
+<!-- ========================================= -->
+
+<section class="welcome-card">
+
+    <div class="welcome-left">
+
+        <span>HOŞ GELDİN</span>
+
+        <h1>
+
+            Merhaba,
+
+        </h1>
+
+        <p>
+
+            Sipariş, bakiye, ve teknik destek işlemlerini buradan gerçekleştirebilirsin.
+
+        </p>
+
+    </div>
+
+    <div class="welcome-right">
+
+        <div class="welcome-glow"></div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- STATS -->
+<!-- ========================================= -->
+
+<section class="stats-grid">
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+
+            <i class="fa-solid fa-wallet"></i>
+
+        </div>
+
+        <div>
+
+            <span>Bakiye</span>
+
+            <h2 id="userBalance">₺0</h2>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+
+            <i class="fa-solid fa-box"></i>
+
+        </div>
+
+        <div>
+
+            <span>Toplam Sipariş</span>
+
+            <h2 id="totalOrders">0</h2>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+
+            <i class="fa-solid fa-clock"></i>
+
+        </div>
+
+        <div>
+
+            <span>Aktif Sipariş</span>
+
+            <h2 id="activeOrders">0</h2>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+
+            <i class="fa-solid fa-crown"></i>
+
+        </div>
+
+        <div>
+
+            <span>Üyelik</span>
+
+            <h2 id="membershipType">Standart</h2>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- QUICK ACTIONS -->
+<!-- ========================================= -->
+
+<section class="quick-actions">
+
+    <button class="quick-card" onclick="location.href='orders.html'">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>Siparişler</span>
+
+    </button>
+
+    <button class="quick-card" onclick="location.href='market.html'">
+
+        <i class="fa-solid fa-store"></i>
+
+        <span>Market</span>
+
+    </button>
+
+    <button class="quick-card" onclick="location.href='wallet.html'">
+
+        <i class="fa-solid fa-wallet"></i>
+
+        <span>Bakiye</span>
+
+    </button>
+
+    <button class="quick-card" onclick="location.href='support.html'">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <span>Destek</span>
+
+    </button>
+
+</section>
+
+<!-- ========================================= -->
+<!-- DASHBOARD GRID -->
+<!-- ========================================= -->
+
+<section class="dashboard-grid">
 
     
+    <!-- ========================================= -->
+    <!-- RECENT ORDERS -->
+    <!-- ========================================= -->
+
+    <section class="panel-card">
+
+        <div class="card-header">
+
+            <h2>Son Siparişler</h2>
+
+            <span>Gerçek zamanlı</span>
+
+        </div>
+
+        <div id="recentOrders">
+
+            <!-- Firestore orders -->
+
+        </div>
+
+    </section>
 
     <!-- ========================================= -->
-    <!-- PANEL JS -->
+    <!-- ACCOUNT INFO -->
     <!-- ========================================= -->
 
-    <script type="module" src="assets/js/panel.js"></script>
-    <script type="module" src="assets/js/menu.js"></script>
+    <section class="panel-card">
+
+        <div class="card-header">
+
+            <h2>Hesap Bilgileri</h2>
+
+            <span>Profil</span>
+
+        </div>
+
+        <div class="account-info">
+
+            <div class="info-row">
+
+                <span>Kullanıcı Adı</span>
+
+                <b id="infoUsername">-</b>
+
+            </div>
+
+            <div class="info-row">
+
+                <span>E-posta</span>
+
+                <b id="infoEmail">-</b>
+
+            </div>
+
+            <div class="info-row">
+
+                <span>Durum</span>
+
+                <b id="infoStatus">Aktif</b>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ANNOUNCEMENT -->
+    <!-- ========================================= -->
+
+    <section class="panel-card">
+
+        <div class="card-header">
+
+            <h2>Duyuru</h2>
+
+            <span>Sistem</span>
+
+        </div>
+
+        <div id="announcementBox">
+
+            Yükleniyor...
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- PANEL END -->
+    <!-- ========================================= -->
+
+</section>
+
+</section> <!-- panel-container end -->
+
+</main>
+
+<!-- ========================================= -->
+<!-- SCRIPTS -->
+<!-- ========================================= -->
+
+<script type="module" src="assets/js/firebase/config.js"></script>
+<script type="module" src="assets/js/panel.js"></script>
+<script type="module" src="assets/js/menu.js"></script>
 
 </body>
-
 </html>

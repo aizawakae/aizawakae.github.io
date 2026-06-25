@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel • AizawaKae</title>
+
+<link rel="icon" href="assets/img/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/mobile.css">
+
+</head>
+
+<body>  
+    
+    <!-- ========================================= -->
+<!-- NAVBAR -->
+<!-- ========================================= -->
+
+<header class="header">
+
+    <div class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-image">
+
+                <img src="assets/img/logo.png" alt="AizawaKae">
+
+            </div>
+
+            <div class="logo-text">
+
+                <h2>AizawaKae</h2>
+
+            </div>
+
+        </a>
+
+        <div class="navbar-right">
+
+            <button class="menu-button" id="menuButton">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ========================================= -->
+<!-- MENU -->
+<!-- ========================================= -->
+
+<div class="menu-overlay"></div>
+
+<aside class="menu">
+
+    <div class="menu-ambient"></div>
+    <div class="menu-glass"></div>
+    <div class="menu-border"></div>
+    <div class="menu-noise"></div>
+    <div class="menu-shadow"></div>
+
+    <div class="menu-content">
+
+        <!-- HEADER -->
+        <div class="menu-header">
+
+            <button class="menu-close" id="menuClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="menu-profile">
+
+                <h2>Kae Aizawa</h2>
+                <span>👑 Premium Üye</span>
+
+            </div>
+
+            <!-- BALANCE -->
+            <div class="menu-balance">
+
+                <div class="menu-balance-header">
+
+                    <div class="menu-balance-title">
+                        <i class="fa-solid fa-wallet"></i>
+                        Bakiye
+                    </div>
+
+                    <a href="wallet.html" class="menu-balance-add">
+
+    <i class="fa-solid fa-plus"></i>
+
+</a>
+
+                </div>
+
+                <div class="menu-balance-value">
+                    ₺0.00
+                </div>
+
+        </div>
+
+        <!-- NAV -->
+        <nav class="menu-nav">
+
+            <a href="panel.html" class="menu-link">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Panel</span>
+                <div class="hover-light"></div>
+            </a>
+
+            <a href="services.html" class="menu-link">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Hizmetler</span>
+                <div class="hover-light"></div>
+            </a>
+
+            <a href="orders.html" class="menu-link">
+                <i class="fa-solid fa-box"></i>
+                <span>Siparişler</span>
+                <div class="hover-light"></div>
+            </a>
+
+        </nav>
+
+        <!-- FOOTER -->
+        <div class="menu-footer">
+
+<button class="menu-logout" id="logoutButton">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Çıkış Yap
+</button>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<main class="admin-page">
+
+    <section class="admin-container">
+        
+
+        <!-- ========================================= -->
+        <!-- ADMIN HEADER -->
+        <!-- ========================================= -->
+
+        <section class="admin-welcome">
+
+            <div>
+
+                <span>YÖNETİM PANELİ</span>
+
+                <h1>
+
+                    Admin Dashboard
+
+                </h1>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- STATS -->
+        <!-- ========================================= -->
+
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Toplam Kullanıcı</span>
+
+                    <h2 id="totalUsers">0</h2>
+
+                </div>
+
+            </div>
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+
+                    <i class="fa-solid fa-box"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Toplam Sipariş</span>
+
+                    <h2 id="totalOrders">0</h2>
+
+                </div>
+
+            </div>
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Aktif Sipariş</span>
+
+                    <h2 id="activeOrders">0</h2>
+
+                </div>
+
+            </div>
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Toplam Bakiye</span>
+
+                    <h2 id="totalBalance">₺0</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- CONTENT -->
+        <!-- ========================================= -->
+
+        <section class="admin-grid">
+            <!-- ========================================= -->
+<!-- USER MANAGEMENT -->
+<!-- ========================================= -->
+
+<div class="admin-card">
+
+    <div class="card-header">
+
+        <div>
+
+            <span>YÖNETİM</span>
+
+            <h2>Kullanıcı Yönetimi</h2>
+
+        </div>
+
+    </div>
+
+    <div class="user-search">
+
+        <input
+            type="text"
+            id="searchUser"
+            placeholder="Kullanıcı adı veya e-posta ara...">
+
+        <button id="searchButton">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </button>
+
+    </div>
+
+    <div id="userResult">
+
+        <div class="user-card">
+
+            <div class="user-avatar">
+
+                <img src="assets/img/logo.png" alt="Avatar">
+
+            </div>
+
+            <div class="user-info">
+
+                <h3 id="adminUsername">
+
+                    Kullanıcı seçilmedi
+
+                </h3>
+
+                <span id="adminEmail">
+
+                    -
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="admin-buttons">
+
+            <button id="giveBalance">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                Bakiye Ver
+
+            </button>
+
+            <button id="removeBalance">
+
+                <i class="fa-solid fa-money-bill-transfer"></i>
+
+                Bakiye Sil
+
+            </button>
+
+            <button id="givePremium">
+
+                <i class="fa-solid fa-crown"></i>
+
+                Premium Ver
+
+            </button>
+
+            <button id="removePremium">
+
+                <i class="fa-solid fa-xmark"></i>
+
+                Premium Kaldır
+
+            </button>
+
+            <button id="verifyUser">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Mavi Tik Ver
+
+            </button>
+
+            <button id="removeVerify">
+
+                <i class="fa-regular fa-circle"></i>
+
+                Mavi Tiki Kaldır
+
+            </button>
+
+            <button id="banUser">
+
+                <i class="fa-solid fa-user-slash"></i>
+
+                Banla
+
+            </button>
+
+            <button id="unbanUser">
+
+                <i class="fa-solid fa-user-check"></i>
+
+                Banı Kaldır
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- LIVE USERS -->
+<!-- ========================================= -->
+
+<div class="admin-card">
+
+    <div class="card-header">
+
+        <div>
+
+            <span>KULLANICILAR</span>
+
+            <h2>Tüm Kullanıcılar</h2>
+
+        </div>
+
+    </div>
+
+    <div id="usersContainer">
+
+        <!-- Firestore'dan gelecek -->
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- SYSTEM -->
+<!-- ========================================= -->
+
+<div class="admin-card">
+
+    <div class="card-header">
+
+        <div>
+
+            <span>SİSTEM</span>
+
+            <h2>Hızlı Araçlar</h2>
+
+        </div>
+
+    </div>
+
+    <div class="admin-buttons">
+
+        <button id="maintenanceMode">
+
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            Bakım Modu
+
+        </button>
+
+        <button id="clearLogs">
+
+            <i class="fa-solid fa-trash"></i>
+
+            Logları Temizle
+
+        </button>
+
+        <button id="refreshStats">
+
+            <i class="fa-solid fa-rotate"></i>
+
+            İstatistikleri Yenile
+
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+</section>
+
+</main>
+
+<script type="module" src="assets/js/firebase/config.js"></script>
+<script type="module" src="assets/js/admin.js"></script>
+<script type="module" src="assets/js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,968 @@
+/* =========================================================
+   ADMIN PAGE
+========================================================= */
+
+.admin-page{
+
+    width:100%;
+    min-height:100vh;
+
+    position:relative;
+
+    padding:140px 40px 40px;
+
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.admin-container{
+
+    width:100%;
+    max-width:1500px;
+
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.admin-welcome{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:42px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,30,56,.14),
+            rgba(255,255,255,.03)
+        );
+
+    border:1px solid rgba(255,255,255,.06);
+
+    backdrop-filter:blur(22px);
+
+    box-shadow:
+        0 0 40px rgba(255,40,70,.15);
+
+}
+
+.admin-welcome::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+    height:280px;
+
+    right:-120px;
+    top:-120px;
+
+    border-radius:50%;
+
+    background:rgba(255,40,70,.15);
+
+    filter:blur(90px);
+
+}
+
+.admin-welcome span{
+
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    color:#ff4b66;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.admin-welcome h1{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    margin-bottom:12px;
+
+}
+
+.admin-welcome p{
+
+    max-width:650px;
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+}
+/* =========================================================
+   STATS
+========================================================= */
+
+.admin-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+}
+
+.admin-stat-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:26px;
+
+    border-radius:22px;
+
+    background:rgba(18,18,18,.72);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.admin-stat-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(255,30,56,.25);
+
+    box-shadow:
+        0 0 35px rgba(255,30,56,.18);
+
+}
+
+.admin-stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:140px;
+    height:140px;
+
+    right:-60px;
+    top:-60px;
+
+    border-radius:50%;
+
+    background:rgba(255,30,56,.10);
+
+    filter:blur(70px);
+
+}
+
+.admin-stat-icon{
+
+    width:64px;
+    height:64px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+
+    border-radius:18px;
+
+    background:rgba(255,30,56,.12);
+
+    color:#ff2d4d;
+
+    font-size:24px;
+
+}
+
+.admin-stat-card span{
+
+    display:block;
+
+    color:#8f8f8f;
+
+    font-size:14px;
+
+    margin-bottom:6px;
+
+}
+
+.admin-stat-card h2{
+
+    font-size:30px;
+
+    font-weight:800;
+
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.admin-actions{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+}
+
+.admin-action{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:28px 18px;
+
+    border-radius:22px;
+
+    background:rgba(18,18,18,.72);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    backdrop-filter:blur(20px);
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.admin-action:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(255,30,56,.28);
+
+    box-shadow:0 0 35px rgba(255,30,56,.18);
+
+}
+
+.admin-action::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,30,56,.10),
+            transparent
+        );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.admin-action:hover::before{
+
+    opacity:1;
+
+}
+
+.admin-action i{
+
+    font-size:30px;
+
+    color:#ff2d4d;
+
+}
+
+.admin-action span{
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+/* =========================================================
+   ADMIN GRID
+========================================================= */
+
+.admin-grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:24px;
+
+    align-items:start;
+
+}
+
+/* =========================================================
+   ADMIN CARD
+========================================================= */
+
+.admin-card{
+
+    background:rgba(18,18,18,.72);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:24px;
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+        0 0 40px rgba(255,40,70,.10);
+
+    padding:28px;
+
+}
+
+/* =========================================================
+   USER SEARCH
+========================================================= */
+
+.user-search{
+
+    display:flex;
+
+    gap:14px;
+
+    margin:22px 0;
+
+}
+
+.user-search input{
+
+    flex:1;
+
+    height:58px;
+
+    padding:0 20px;
+
+    border-radius:16px;
+
+    background:#101010;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    color:#fff;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.35s;
+
+}
+
+.user-search input:focus{
+
+    border-color:rgba(255,30,56,.35);
+
+    box-shadow:
+        0 0 20px rgba(255,30,56,.15);
+
+}
+
+.user-search button{
+
+    width:58px;
+    height:58px;
+
+    border-radius:16px;
+
+    background:#ff1e38;
+
+    color:#fff;
+
+    font-size:18px;
+
+    transition:.35s;
+
+}
+
+.user-search button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 0 30px rgba(255,30,56,.35);
+
+}
+
+/* =========================================================
+   USER CARD
+========================================================= */
+
+.user-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.02);
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.user-avatar{
+
+    width:72px;
+    height:72px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:2px solid rgba(255,30,56,.30);
+
+}
+
+.user-avatar img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.user-info{
+
+    flex:1;
+
+}
+
+.user-info h3{
+
+    font-size:22px;
+
+    font-weight:800;
+
+    margin-bottom:6px;
+
+}
+
+.user-info span{
+
+    color:#9d9d9d;
+
+    font-size:14px;
+
+}
+
+/* =========================================================
+   ADMIN BUTTONS
+========================================================= */
+
+.admin-buttons{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+    margin-top:24px;
+
+}
+
+.admin-buttons button{
+
+    height:56px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    border-radius:16px;
+
+    background:#151515;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.admin-buttons button:hover{
+
+    background:#ff1e38;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 0 28px rgba(255,30,56,.30);
+
+}
+/* =========================================================
+   USERS LIST
+========================================================= */
+
+#usersContainer{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:16px;
+
+    margin-top:24px;
+
+}
+
+.user-list-item{
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px 20px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.02);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.35s;
+
+}
+
+.user-list-item:hover{
+
+    background:rgba(255,30,56,.05);
+
+    border-color:rgba(255,30,56,.18);
+
+}
+
+.user-list-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.user-list-avatar{
+
+    width:56px;
+    height:56px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:2px solid rgba(255,30,56,.25);
+
+}
+
+.user-list-avatar img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.user-list-info h4{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    margin-bottom:4px;
+
+}
+
+.user-list-info span{
+
+    color:#8c8c8c;
+
+    font-size:13px;
+
+}
+
+.user-list-right{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.user-list-right button{
+
+    width:44px;
+    height:44px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    background:#171717;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.user-list-right button:hover{
+
+    background:#ff1e38;
+
+    transform:translateY(-3px);
+
+}
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+textarea{
+
+    width:100%;
+
+    min-height:160px;
+
+    resize:none;
+
+    margin:20px 0;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#101010;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    color:#fff;
+
+    outline:none;
+
+    transition:.35s;
+
+}
+
+textarea:focus{
+
+    border-color:rgba(255,30,56,.35);
+
+    box-shadow:
+        0 0 20px rgba(255,30,56,.15);
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1200px){
+
+    .admin-stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .admin-actions{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .admin-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .admin-page{
+
+        padding:120px 20px 30px;
+
+    }
+
+    .admin-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .admin-actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .admin-buttons{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .user-search{
+
+        flex-direction:column;
+
+    }
+
+    .user-search button{
+
+        width:100%;
+
+    }
+
+}
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+.user-badge{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    padding:8px 14px;
+
+    border-radius:50px;
+
+    font-size:13px;
+    font-weight:700;
+
+}
+
+.user-badge.verified{
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #1d9bf0,
+        #0c7dd8
+    );
+
+    box-shadow:
+        0 0 20px rgba(29,155,240,.30);
+
+}
+
+.user-badge.premium{
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #ffb800,
+        #ff7a00
+    );
+
+    box-shadow:
+        0 0 20px rgba(255,184,0,.30);
+
+}
+
+.user-badge.banned{
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #ff1e38,
+        #a10018
+    );
+
+}
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.success-button{
+
+    background:linear-gradient(
+        135deg,
+        #2fd67d,
+        #19b461
+    ) !important;
+
+}
+
+.success-button:hover{
+
+    box-shadow:
+        0 0 30px rgba(47,214,125,.35);
+
+}
+
+/* =========================================================
+   WARNING
+========================================================= */
+
+.warning-button{
+
+    background:linear-gradient(
+        135deg,
+        #ffb800,
+        #ff9100
+    ) !important;
+
+}
+
+.warning-button:hover{
+
+    box-shadow:
+        0 0 30px rgba(255,184,0,.35);
+
+}
+
+/* =========================================================
+   DANGER
+========================================================= */
+
+.danger-button{
+
+    background:linear-gradient(
+        135deg,
+        #ff1e38,
+        #d50024
+    ) !important;
+
+}
+
+.danger-button:hover{
+
+    box-shadow:
+        0 0 30px rgba(255,30,56,.35);
+
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.loading{
+
+    opacity:.6;
+
+    pointer-events:none;
+
+    filter:grayscale(.4);
+
+}
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty-state{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:18px;
+
+    min-height:220px;
+
+    color:#888;
+
+}
+
+.empty-state i{
+
+    font-size:52px;
+
+    color:#444;
+
+}
+
+/* =========================================================
+   END
+========================================================= */
