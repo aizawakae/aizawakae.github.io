@@ -51,7 +51,7 @@
     height:100dvh;
 
     overflow-y:auto;
-    
+
     overflow-x:hidden;
 
     display:flex;
@@ -1014,7 +1014,7 @@
 
     .menu{
 
-        width:100%;
+        width:80%;
 
     }
 
