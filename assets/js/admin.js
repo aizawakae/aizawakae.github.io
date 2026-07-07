@@ -22,10 +22,12 @@ import {
 // ELEMENTS
 // =========================================
 
+
 const totalUsers = document.getElementById("totalUsers");
 const totalOrders = document.getElementById("totalOrders");
 const activeOrders = document.getElementById("activeOrders");
 const totalBalance = document.getElementById("totalBalance");
+
 
 // =========================================
 // AUTH
@@ -131,6 +133,7 @@ const searchButton = document.getElementById("searchButton");
 
 const adminUsername = document.getElementById("adminUsername");
 const adminEmail = document.getElementById("adminEmail");
+const adminPremium = document.getElementById("adminPremium");
 
 let selectedUserId = null;
 let selectedUserData = null;
@@ -168,23 +171,34 @@ async function searchUser() {
             const username = (data.username || "").toLowerCase();
             const email = (data.email || "").toLowerCase();
 
-            if (
-                username === keyword ||
-                email === keyword
-            ) {
+if (
+    username === keyword ||
+    email === keyword
+) {
 
-                found = true;
+    found = true;
 
-                selectedUserId = userDoc.id;
-                selectedUserData = data;
+    selectedUserId = userDoc.id;
+    selectedUserData = data;
 
-                adminUsername.textContent =
-                    data.username || "-";
+    adminUsername.innerHTML =
+        `${data.username || "-"}
 
-                adminEmail.textContent =
-                    data.email || "-";
+        ${data.verified
+            ? '<i class="fa-solid fa-circle-check" style="color:#1d9bf0;font-size:16px;"></i>'
+            : ""}`;
 
-            }
+    adminEmail.textContent =
+        data.email || "-";
+
+        console.log(data);
+
+    adminPremium.textContent =
+        data.premium
+            ? "👑 Premium Üye"
+            : "Standart Üye";
+
+}
 
         });
 

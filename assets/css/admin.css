@@ -963,6 +963,57 @@ textarea:focus{
 
 }
 
+
+/*=========================================================
+    ADMIN USER STATUS
+=========================================================*/
+
+.user-info h3{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:6px;
+
+}
+
+#adminVerified{
+
+    color:#1d9bf0;
+
+    font-size:16px;
+
+}
+
+#adminPremium{
+
+    display:block;
+
+    width:max-content;
+
+    margin:8px 0 6px;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    background:rgba(255,30,60,.12);
+
+    border:1px solid rgba(255,30,60,.25);
+
+    color:#ff4b6e;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+
+
 /* =========================================================
    END
 ========================================================= */

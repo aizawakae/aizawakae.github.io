@@ -1468,3 +1468,35 @@
     }
 
 }
+
+#menuUsername{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+#menuVerified{
+
+    display:none;
+
+    color:#1d9bf0;
+
+    font-size:15px;
+
+}
+
+.menu-verified{
+
+    color:#1d9bf0;
+
+    font-size:14px;
+
+    margin-left:1px;
+
+}
