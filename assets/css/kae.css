@@ -3550,6 +3550,28 @@ img{
 }
 
 
+/* =========================================
+   KAE MOBILE FIX
+========================================= */
+
+@media (max-width:768px){
+
+    .kae-about-wrapper{
+
+        display:flex !important;
+        flex-direction:column !important;
+        gap:30px !important;
+
+    }
+
+    .kae-about-left,
+    .kae-about-right{
+
+        width:100% !important;
+
+    }
+
+}
 
 
 /*=========================================================
