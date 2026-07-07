@@ -1982,36 +1982,6 @@ input:-webkit-autofill:focus{
 
 }
 
-.mouse-glow{
-
-    position:fixed;
-
-    width:280px;
-
-    height:280px;
-
-    border-radius:50%;
-
-    background:
-
-        radial-gradient(
-
-            circle,
-
-            rgba(255,53,95,.14),
-
-            transparent 70%
-
-        );
-
-    filter:blur(55px);
-
-    pointer-events:none;
-
-    z-index:-1;
-
-}
-
 /*==============================
     LOADER
 ==============================*/

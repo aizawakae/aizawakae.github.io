@@ -507,35 +507,6 @@ span{
 }
 
 /*=========================================================
-    MOUSE GLOW
-=========================================================*/
-
-.mouse-glow{
-
-    position:absolute;
-
-    width:320px;
-
-    height:320px;
-
-    border-radius:50%;
-
-    background:radial-gradient(circle,
-        rgba(255,45,85,.18),
-        transparent 72%
-    );
-
-    filter:blur(60px);
-
-    transform:translate(-50%,-50%);
-
-    transition:
-        left .15s linear,
-        top .15s linear;
-
-}
-
-/*=========================================================
     CURSOR
 =========================================================*/
 
