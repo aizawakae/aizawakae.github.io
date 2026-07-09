@@ -103,12 +103,21 @@ onAuthStateChanged(auth, async (user) => {
            USERNAME
         ========================================= */
 
-        if (menuUsername) {
+if (menuUsername) {
 
-            menuUsername.textContent =
-                userData.username || "Kullanıcı";
+    menuUsername.textContent =
+        userData.username || "Kullanıcı";
 
-        }
+}
+
+if (menuVerified) {
+
+    menuVerified.style.display =
+        userData.verified
+            ? "inline-block"
+            : "none";
+
+}
 
         /* =========================================
            BALANCE

@@ -29,37 +29,7 @@ const activeOrders = document.getElementById("activeOrders");
 const totalBalance = document.getElementById("totalBalance");
 
 
-// =========================================
-// AUTH
-// =========================================
 
-onAuthStateChanged(auth, async (user) => {
-
-    if (!user) {
-
-        window.location.href = "login.html";
-        return;
-
-    }
-
-    const userRef = doc(db, "users", user.uid);
-    const userSnap = await getDoc(userRef);
-
-    if (!userSnap.exists()) {
-
-        window.location.href = "panel.html";
-        return;
-
-    }
-
-    const data = userSnap.data();
-
-    // Buraya admin kontrolü gelecek
-    // if(!data.admin) window.location.href="panel.html";
-
-    loadDashboard();
-
-});
 
 // =========================================
 // DASHBOARD
@@ -85,16 +55,32 @@ async function loadDashboard() {
 
         totalOrders.textContent = ordersSnapshot.data().count;
 
-        // ACTIVE ORDERS
+// ACTIVE ORDERS
 
-        const activeQuery = query(
-            collection(db, "orders"),
-            where("status", "==", "active")
-        );
+const activeWaitingQuery = query(
+    collection(db, "orders"),
+    where("status", "==", "Beklemede")
+);
 
-        const activeSnapshot = await getCountFromServer(activeQuery);
+const activeProcessingQuery = query(
+    collection(db, "orders"),
+    where("status", "==", "İşleniyor")
+);
 
-        activeOrders.textContent = activeSnapshot.data().count;
+const waitingSnapshot = await getCountFromServer(activeWaitingQuery);
+
+const processingSnapshot = await getCountFromServer(activeProcessingQuery);
+
+console.log("Beklemede:", waitingSnapshot.data().count);
+console.log("İşleniyor:", processingSnapshot.data().count);
+
+const activeCount =
+    waitingSnapshot.data().count +
+    processingSnapshot.data().count;
+
+console.log("Toplam aktif:", activeCount);
+
+activeOrders.innerText = activeCount;
 
         // TOTAL BALANCE
 

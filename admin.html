@@ -91,8 +91,17 @@
 
             <div class="menu-profile">
 
-                <h2>Kae Aizawa</h2>
-                <span>👑 Premium Üye</span>
+                <h2 class="menu-user-title">
+
+    <span id="menuUsername">Kae Aizawa</span>
+
+    <i
+        id="menuVerified"
+        class="fa-solid fa-circle-check">
+    </i>
+
+</h2>
+                <span id="menuPremium">Standart Üye</span>
 
             </div>
 
@@ -114,9 +123,9 @@
 
                 </div>
 
-                <div class="menu-balance-value">
-                    ₺0.00
-                </div>
+<div class="menu-balance-value" id="menuBalance">
+    ₺0.00
+</div>
 
         </div>
 
@@ -156,6 +165,7 @@
     </div>
 
 </aside>
+
 
 
 
@@ -435,7 +445,7 @@
 </div>
 
 <!-- ========================================= -->
-<!-- SYSTEM -->
+<!-- ORDER MANAGEMENT -->
 <!-- ========================================= -->
 
 <div class="admin-card">
@@ -444,37 +454,55 @@
 
         <div>
 
-            <span>SİSTEM</span>
+            <span>SİPARİŞLER</span>
 
-            <h2>Hızlı Araçlar</h2>
+            <h2>Sipariş Yönetimi</h2>
+
+        </div>
+
+        <span id="orderCount">0 Sipariş</span>
+
+    </div>
+
+    <div class="admin-orders">
+
+        <div class="admin-orders-header">
+
+            <span>Platform</span>
+
+            <span>Kullanıcı</span>
+
+            <span>Durum</span>
+
+            <span>İşlem</span>
+
+        </div>
+
+        <div id="ordersContainer">
+
+            <!-- Firestore -->
 
         </div>
 
     </div>
 
-    <div class="admin-buttons">
+    <div class="admin-pagination">
 
-        <button id="maintenanceMode">
+        <button id="prevOrders">
 
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-
-            Bakım Modu
+            <i class="fa-solid fa-chevron-left"></i>
 
         </button>
 
-        <button id="clearLogs">
+        <span id="pageInfo">
 
-            <i class="fa-solid fa-trash"></i>
+            1 / 1
 
-            Logları Temizle
+        </span>
 
-        </button>
+        <button id="nextOrders">
 
-        <button id="refreshStats">
-
-            <i class="fa-solid fa-rotate"></i>
-
-            İstatistikleri Yenile
+            <i class="fa-solid fa-chevron-right"></i>
 
         </button>
 
@@ -490,7 +518,9 @@
 
 <script type="module" src="assets/js/firebase/config.js"></script>
 <script type="module" src="assets/js/admin.js"></script>
+<script type="module" src="assets/js/admin-orders.js"></script>
 <script type="module" src="assets/js/menu.js"></script>
+
 
 </body>
 </html>

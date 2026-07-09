@@ -118,13 +118,28 @@ async function loadUserData() {
            PROFILE
         ========================================= */
 
-        if (profileUsername)
-            profileUsername.textContent =
-                data.username || currentUser.displayName || "Kullanıcı";
+if (profileUsername) {
 
-        if (welcomeUser)
-            welcomeUser.textContent =
-                data.username || currentUser.displayName || "Kullanıcı";
+    profileUsername.innerHTML =
+        `${data.username || currentUser.displayName || "Kullanıcı"}
+        ${
+            data.verified
+            ? '<i class="fa-solid fa-circle-check" style="color:#1d9bf0;font-size:16px;margin-left:6px;"></i>'
+            : ""
+        }`;
+
+}
+if (welcomeUser) {
+
+    welcomeUser.innerHTML =
+        `${data.username || currentUser.displayName || "Kullanıcı"}
+        ${
+            data.verified
+            ? '<i class="fa-solid fa-circle-check" style="color:#1d9bf0;font-size:16px;margin-left:6px;"></i>'
+            : ""
+        }`;
+
+}
 
         if (accountUsername)
             accountUsername.textContent =
@@ -239,21 +254,24 @@ import {
 
 async function loadOrders() {
 
+    console.log("loadOrders çalıştı");
+
     try {
 
         const ordersRef = collection(db, "orders");
 
-        const ordersQuery = query(
-            ordersRef,
-            where("uid", "==", currentUser.uid),
-            orderBy("createdAt", "desc"),
-            limit(5)
-        );
+const ordersQuery = query(
+    ordersRef,
+    orderBy("createdAt", "desc"),
+    limit(5)
+);
 
         const snapshot = await getDocs(ordersQuery);
 
-        const ordersContainer =
-            document.getElementById("ordersContainer");
+        console.log("Sipariş sayısı:", snapshot.size);
+
+const ordersContainer =
+document.getElementById("recentOrdersList");
 
         if (!ordersContainer) return;
 
@@ -262,66 +280,109 @@ async function loadOrders() {
         let total = 0;
         let active = 0;
 
+        const allOrdersQuery = query(
+    collection(db, "orders"),
+    where("uid", "==", currentUser.uid)
+);
+
+const allOrdersSnapshot = await getDocs(allOrdersQuery);
+
+total = allOrdersSnapshot.size;
+
+active = 0;
+
+allOrdersSnapshot.forEach((doc) => {
+
+    const order = doc.data();
+
+if (
+    order.status === "Beklemede" ||
+    order.status === "İşleniyor"
+) {
+
+    active++;
+
+}
+
+});
+
         snapshot.forEach((docSnap) => {
 
-            total++;
+            
 
             const order = docSnap.data();
-
+            
             let statusText = "Bekleniyor";
             let statusClass = "waiting";
 
             switch (order.status) {
 
-                case "processing":
+                case "İşleniyor":
                     statusText = "İşleniyor";
                     statusClass = "progress";
-                    active++;
+                    
                     break;
 
-                case "completed":
+                case "Tamamlandı":
                     statusText = "Tamamlandı";
                     statusClass = "completed";
                     break;
 
-                case "cancelled":
+                case "İptal":
                     statusText = "İptal";
                     statusClass = "cancelled";
                     break;
 
                 default:
-                    active++;
-                    break;
+                 statusText = "Beklemede";
+                 statusClass = "waiting";
+                break;
 
             }
 
-            const row = document.createElement("div");
+const row = document.createElement("div");
 
-            row.className = "table-row";
+row.className = "recent-order-item";
 
-            row.innerHTML = `
+row.innerHTML = `
 
-                <span>${order.service || "-"}</span>
+<div class="recent-order-platform">
 
-                <span class="status ${statusClass}">
-                    ${statusText}
-                </span>
+    <strong>${order.platform}</strong>
 
-                <span>₺${Number(order.price || 0).toLocaleString("tr-TR")}</span>
+    <span>${order.service}</span>
 
-            `;
+</div>
+
+<div>
+
+    <span class="recent-order-status ${statusClass}">
+
+        ${statusText}
+
+    </span>
+
+</div>
+
+<div class="recent-order-price">
+
+    ${order.total || "₺0"}
+
+</div>
+
+`;
 
             ordersContainer.appendChild(row);
 
         });
 
-        if (totalOrders)
-            totalOrders.textContent =
-                total.toLocaleString("tr-TR");
+if (totalOrders) {
+    totalOrders.textContent = total.toLocaleString("tr-TR");
+}
 
-        if (activeOrders)
-            activeOrders.textContent =
-                active.toLocaleString("tr-TR");
+if (activeOrders) {
+    activeOrders.textContent = active.toLocaleString("tr-TR");
+}
 
         if (snapshot.empty) {
 

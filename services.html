@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+
+<!-- ========================================= -->
+<!-- FAVICON -->
+<!-- ========================================= -->
+
+<link rel="icon"
+      type="image/png"
+      href="assets/img/favicon.png">
+
+
+    <!-- ========================================= -->
+    <!-- META -->
+    <!-- ========================================= -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AizawaStore</title>
+
+    <meta name="description"
+        content="AizawaKae Premium - Yeni nesil sosyal medya hizmetleri, premium üyelik sistemi ve gelişmiş kullanıcı deneyimi.">
+
+    <meta name="keywords"
+        content="AizawaKae, Premium, Sosyal Medya, Discord, Instagram, TikTok, YouTube">
+
+    <meta name="author"
+        content="AizawaKae">
+
+    <meta name="theme-color"
+        content="#050505">
+
+    <!-- ========================================= -->
+    <!-- FAVICON -->
+    <!-- ========================================= -->
+
+    <link rel="icon"
+        href="assets/img/logo.png">
+
+    <!-- ========================================= -->
+    <!-- GOOGLE FONT -->
+    <!-- ========================================= -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================= -->
+    <!-- ICON -->
+    <!-- ========================================= -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ========================================= -->
+    <!-- CSS -->
+    <!-- ========================================= -->
+<link rel="stylesheet" href="assets/css/services.css">
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/mobile.css">
+
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- LOADER -->
+    <!-- ========================================= -->
+
+    <div id="loader">
+
+        <div class="loader-logo">
+
+            <img src="assets/img/logo.png"
+                alt="AizawaKae">
+
+        </div>
+
+        <div class="loader-line"></div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- BACKGROUND SYSTEM -->
+    <!-- ========================================= -->
+
+    <div class="background-system">
+
+        <div class="bg-grid"></div>
+
+        <div class="bg-noise"></div>
+
+        <div class="bg-red-left"></div>
+
+        <div class="bg-red-center"></div>
+
+        <div class="bg-purple-right"></div>
+
+        <div class="bg-light light-1"></div>
+
+        <div class="bg-light light-2"></div>
+
+        <div class="bg-light light-3"></div>
+
+        <div class="mouse-glow"></div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- NAVBAR -->
+    <!-- ========================================= -->
+
+    <header class="header">
+
+        <div class="navbar">
+
+            <!-- Logo -->
+
+            <a href="#"
+                class="logo">
+
+                <div class="logo-image">
+
+                    <img src="assets/img/logo.png"
+                        alt="AizawaKae">
+
+                </div>
+
+                <div class="logo-text">
+
+                    <h2>AizawaKae</h2>
+
+                </div>
+
+            </a>
+
+            <!-- Desktop Menu -->
+
+            <nav class="desktop-menu">
+
+                <a href="#hero"> </a>
+
+                <a href="#features"></a>
+
+                <a href="#premium"></a>
+
+                <a href="#contact"></a>
+
+            </nav>
+
+            <!-- Right -->
+
+            <div class="navbar-right">
+
+                <button class="menu-button"
+                    id="menuButton">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </button>
+
+            </div>
+
+    </header>
+
+
+<!-- ========================================= -->
+<!-- MENU -->
+<!-- ========================================= -->
+
+<div class="menu-overlay"></div>
+
+<aside class="menu">
+
+    <div class="menu-ambient"></div>
+    <div class="menu-glass"></div>
+    <div class="menu-border"></div>
+    <div class="menu-noise"></div>
+    <div class="menu-shadow"></div>
+
+    <div class="menu-content">
+
+        <!-- HEADER -->
+        <div class="menu-header">
+
+            <button class="menu-close" id="menuClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="menu-profile">
+
+                <h2 class="menu-user-title">
+
+    <span id="menuUsername">Kae Aizawa</span>
+
+    <i
+        id="menuVerified"
+        class="fa-solid fa-circle-check">
+    </i>
+
+</h2>
+                <span id="menuPremium">Standart Üye</span>
+
+            </div>
+
+            <!-- BALANCE -->
+            <div class="menu-balance">
+
+                <div class="menu-balance-header">
+
+                    <div class="menu-balance-title">
+                        <i class="fa-solid fa-wallet"></i>
+                        Bakiye
+                    </div>
+
+                    <a href="wallet.html" class="menu-balance-add">
+
+    <i class="fa-solid fa-plus"></i>
+
+</a>
+
+                </div>
+
+<div class="menu-balance-value" id="menuBalance">
+    ₺0.00
+</div>
+
+        </div>
+
+        <!-- NAV -->
+        <nav class="menu-nav">
+
+            <a href="panel.html" class="menu-link">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Panel</span>
+                <div class="hover-light"></div>
+            </a>
+
+            <a href="services.html" class="menu-link">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Hizmetler</span>
+                <div class="hover-light"></div>
+            </a>
+
+            <a href="orders.html" class="menu-link">
+                <i class="fa-solid fa-box"></i>
+                <span>Siparişler</span>
+                <div class="hover-light"></div>
+            </a>
+
+        </nav>
+
+        <!-- FOOTER -->
+        <div class="menu-footer">
+
+<button class="menu-logout" id="logoutButton">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Çıkış Yap
+</button>
+
+        </div>
+
+    </div>
+
+</aside>
+
+<!-- ========================================= -->
+<!-- MAIN -->
+<!-- ========================================= -->
+
+<main>
+
+<!-- ========================================= -->
+<!-- SERVICES HERO -->
+<!-- ========================================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+    <div class="hero-wrapper services-hero-wrapper">
+
+        <div class="hero-left services-hero-left">
+
+
+            
+
+            <!-- ========================================= -->
+            <!-- LEFT -->
+            <!-- ========================================= -->
+
+            <div class="services-hero-left">
+
+                <span class="section-tag">
+
+                    Premium SMM Servis
+
+                </span>
+
+                <h1>
+
+                    Tüm sosyal medya
+
+                    <span>
+
+                        Hizmetleri
+
+                    </span>
+
+                    Tek bir yerde
+
+                </h1>
+
+                <div class="hero-buttons">
+
+                    <a href="index.html"
+                       class="primary-btn">
+
+                        <i class="fa-solid fa-house"></i>
+
+                        Ana Sayfa
+
+                    </a>
+
+                    <a href="#services-panel"
+                       class="secondary-btn">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                        Hizmetlere göz at
+
+                    </a>
+
+                </div>
+
+            </div>
+            
+
+            <!-- ========================================= -->
+            <!-- RIGHT -->
+            <!-- ========================================= -->
+
+            <div class="hero-right services-hero-right">
+
+                <div class="hero-panel hero-preview">
+
+                    <div class="hero-preview-header">
+
+                        <span>
+
+                            Live Dashboard
+
+                        </span>
+
+                        <div class="hero-status">
+
+                            <span class="status-dot"></span>
+
+                            Online
+
+                        </div>
+
+                    </div>
+
+                    <div class="hero-preview-body">
+
+                        <div class="preview-item">
+
+                            <span>
+
+                                Platform
+
+                            </span>
+
+                            <strong>
+
+                                Instagram
+
+                            </strong>
+
+                        </div>
+
+                        <div class="preview-item">
+
+                            <span>
+
+                                Kategori
+
+                            </span>
+
+                            <strong>
+
+                                Takipçi
+
+                            </strong>
+
+                        </div>
+
+                        <div class="preview-item">
+
+                            <span>
+
+                                Hizmet
+
+                            </span>
+
+                            <strong>
+
+                                Premium Takipçi
+
+                            </strong>
+
+                        </div>
+
+                        <div class="preview-item">
+
+                            <span>
+
+                                Durumu
+
+                            </span>
+
+                            <strong>
+
+                                Hazır
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Floating Cards -->
+
+                <div class="floating-card floating-card-1">
+
+                    <i class="fa-solid fa-fire"></i>
+
+                    <span>
+
+                        Hızlı
+
+                    </span>
+
+                </div>
+
+                <div class="floating-card floating-card-2">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <span>
+
+                        Güvenilir
+
+                    </span>
+
+                </div>
+
+                <div class="floating-card floating-card-3">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+
+                        Yüksek Kalite
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- SERVICES PANEL -->
+<!-- ========================================= -->
+
+<section class="services-panel-section" id="services-panel">
+
+    <div class="container">
+
+        <div class="services-layout">
+
+            <!-- ========================================= -->
+            <!-- LEFT CARDS -->
+            <!-- ========================================= -->
+
+            <aside class="services-left">
+
+                <div class="service-mini-card">
+
+                    <div class="service-mini-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <h3>Hızlı Teslimat</h3>
+
+                    <p>
+                        Hizmetlerin çoğu zaman birkaç dakika içinde başlar.
+                    </p>
+
+                </div>
+
+                <div class="service-mini-card">
+
+                    <div class="service-mini-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>Güvenli Siparişler</h3>
+
+                    <p>
+                        Bilgileriniz her zaman korunur.
+                    </p>
+
+                </div>
+
+                <div class="service-mini-card">
+
+                    <div class="service-mini-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <h3>Yüksek Kalite</h3>
+
+                    <p>
+                        Kararlı performans ile premium hizmetler.
+                    </p>
+
+                </div>
+
+            </aside>
+
+            <!-- ========================================= -->
+            <!-- SERVICE PANEL -->
+            <!-- ========================================= -->
+
+            <div class="service-panel">
+
+                <div class="service-panel-header">
+
+                    <span class="panel-tag">
+
+                        SİPARİŞ OLUŞTUR
+
+                    </span>
+
+                    <h2>
+
+                        Yeni Hizmet Siparişi
+
+                    </h2>
+
+                    <p>
+
+                        Platformunuzu seçin ve siparişinizi tamamlayın.
+
+                    </p>
+
+                </div>
+
+                <form id="serviceForm"
+                      class="service-form">
+
+                    <!-- Platform -->
+
+                    <div class="service-field">
+
+                        <label>
+
+                            Platform
+
+                        </label>
+
+                        <select id="platform">
+
+                            <option value="">
+
+                                Platform Seçin
+
+                            </option>
+
+                            <option value="instagram">
+
+                                Instagram
+
+                            </option>
+
+                            <option value="tiktok">
+
+                                TikTok
+
+                            </option>
+
+                            <option value="youtube">
+
+                                YouTube
+
+                            </option>
+
+                            <option value="discord">
+
+                                Discord
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Category -->
+
+                    <div class="service-field">
+
+                        <label>
+
+                            Category
+
+                        </label>
+
+                        <select id="category">
+
+                            <option value="">
+
+                                Kategori Seçin
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Service -->
+
+                    <div class="service-field">
+
+                        <label>
+
+                            Service
+
+                        </label>
+
+                        <select id="service">
+
+                            <option value="">
+
+                                Hizmet Seçin
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Target -->
+
+                    <div class="service-field">
+
+                        <label id="targetLabel">
+
+                            Username
+
+                        </label>
+
+                        <input
+
+                            id="targetInput"
+
+                            type="text"
+
+                            placeholder="@kullanıcıadı">
+
+                    </div>
+
+                    <!-- Quantity -->
+
+                    <div class="service-field">
+
+                        <label>
+
+                            Quantity
+
+                        </label>
+
+                        <input
+
+                            id="quantity"
+
+                            type="number"
+
+                            min="100"
+
+                            placeholder="1000">
+
+                    </div>
+
+                    <!-- Price -->
+
+                    <div class="service-price">
+
+                        <span>
+
+                            Tahmini Fiyat
+
+                        </span>
+
+                        <strong id="estimatedPrice">
+
+                            --
+
+                        </strong>
+
+                    </div>
+
+                    <!-- Submit -->
+
+<button
+
+    type="button"
+
+    class="primary-btn service-submit">
+
+    <i class="fa-solid fa-paper-plane"></i>
+
+    Sipariş Oluştur
+
+</button>
+
+                </form>
+
+            </div>
+
+
+
+
+            <!-- ========================================= -->
+            <!-- RIGHT CARDS -->
+            <!-- ========================================= -->
+
+            <aside class="services-right">
+
+                <div class="service-mini-card">
+
+                    <div class="service-mini-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <h3>36+</h3>
+
+                    <p>
+
+                        Aktif Hizmetler
+
+                    </p>
+
+                </div>
+
+                <div class="service-mini-card">
+
+                    <div class="service-mini-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h3>24 / 7</h3>
+
+                    <p>
+
+                        Premium Destek
+
+                    </p>
+
+                </div>
+
+                <div class="service-mini-card">
+
+                    <div class="service-mini-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3>87.8%</h3>
+
+                    <p>
+
+                        Başarı Oranı
+
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- SERVICE INFORMATION -->
+<!-- ========================================= -->
+
+<section class="service-information" id="service-information">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Service Information
+
+            </span>
+
+        </div>
+
+        <div class="service-info-grid">
+
+            <!-- Card -->
+
+            <div class="service-info-box">
+
+                <div class="service-info-icon">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+                <h3>
+
+                    Username
+
+                </h3>
+
+                <p>
+Takipçi hizmetleri yalnızca kullanıcı adınızı gerektirir.
+Şifreniz istenmez.
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="service-info-box">
+
+                <div class="service-info-icon">
+
+                    <i class="fa-solid fa-link"></i>
+
+                </div>
+
+                <h3>
+
+                    Post URL
+
+                </h3>
+
+                <p>
+
+Beğeniler, yorumlar ve görüntülemeler için içerik bağlantısı gereklidir.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="service-info-box">
+
+                <div class="service-info-icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <h3>
+
+                    Delivery Time
+
+                </h3>
+
+                <p>
+
+                    Teslimat süresi, seçilen
+                    hizmet ve miktarına bağlıdır.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="service-info-box">
+
+                <div class="service-info-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+                <h3>
+
+                    Secure System
+
+                </h3>
+
+                <p>
+
+                    Siparişler güvenli bir şekilde işlenir.
+                    Bilgileriniz korunur.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="service-info-box">
+
+                <div class="service-info-icon">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </div>
+
+                <h3>
+
+                    Refill
+
+                </h3>
+
+                <p>
+
+Uygun hizmetler için yeniden doldurma desteği mevcuttur.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="service-info-box">
+
+                <div class="service-info-icon">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                </div>
+
+                <h3>
+
+                    Support
+
+                </h3>
+
+                <p>
+
+                    Destek ekibimiz, her zaman yardımınız için hazır.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- HOW IT WORKS -->
+<!-- ========================================= -->
+
+<section class="service-steps">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Simple Process
+
+            </span>
+
+        </div>
+
+        <div class="steps-grid">
+
+            <div class="step-card">
+
+                <span>01</span>
+
+                <h3>
+
+                    Platform Seçin
+
+                </h3>
+
+            </div>
+
+            <div class="step-card">
+
+                <span>02</span>
+
+                <h3>
+
+                  Hizmeti Seçin
+
+                </h3>
+
+            </div>
+
+            <div class="step-card">
+
+                <span>03</span>
+
+                <h3>  
+                 Siparişi Verin
+
+                </h3>
+
+            </div>
+
+            <div class="step-card">
+
+                <span>04</span>
+
+                <h3>
+
+                    Teslimat 
+
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================= -->
+<!-- ORDER CALCULATOR -->
+<!-- ========================================= -->
+
+<section class="order-calculator">
+
+    <div class="container">
+
+        <div class="calculator-wrapper">
+
+            <div class="calculator-left">
+
+                <span class="section-tag">
+
+                    Calculator
+
+                </span>
+
+                <h2>
+
+                    Estimated Order
+
+                </h2>
+            </div>
+
+            <div class="calculator-right">
+
+                <div class="calculator-row">
+
+                    <span>
+
+                        Quantity
+
+                    </span>
+
+                    <strong id="calcQuantity">
+
+                        7213
+
+                    </strong>
+
+                </div>
+
+                <div class="calculator-">
+                </div>
+
+                <div class="calculator-row">
+
+                    <span>
+
+                        Total
+
+                    </span>
+
+                    <strong id="calcTotal">
+
+                        ₺113.447
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- PLATFORM STATUS -->
+<!-- ========================================= -->
+
+<section class="platform-status">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Platform Status
+
+            </span>
+
+            <h2>
+
+                Mevcut Hizmet
+            </h2>
+
+        </div>
+
+        <div class="platform-status-grid">
+
+            <div class="platform-status-card">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <h3>
+
+                    Instagram
+
+                </h3>
+
+                <span class="status-online">
+
+                    ● Operational
+
+                </span>
+
+            </div>
+
+            <div class="platform-status-card">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+                <h3>
+
+                    TikTok
+
+                </h3>
+
+                <span class="status-online">
+
+                    ● Operational
+
+                </span>
+
+            </div>
+
+            <div class="platform-status-card">
+
+                <i class="fa-brands fa-youtube"></i>
+
+                <h3>
+
+                    YouTube
+
+                </h3>
+
+                <span class="status-online">
+
+                    ● Operational
+
+                </span>
+
+            </div>
+
+            <div class="platform-status-card">
+
+                <i class="fa-brands fa-discord"></i>
+
+                <h3>
+
+                    Discord
+
+                </h3>
+
+                <span class="status-online">
+
+                    ● Operational
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- ORDER SECURITY -->
+<!-- ========================================= -->
+
+<section class="order-security">
+
+    <div class="container">
+
+        <div class="security-grid">
+
+            <div class="security-item">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <h3>
+
+                    Güvenli Ödeme
+
+                </h3>
+
+                <p>
+
+                    Siparişler güvenli bir şekilde işlenmektedir.
+
+                </p>
+
+            </div>
+
+            <div class="security-item">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>
+
+                    Güvenli Bilgiler
+
+                </h3>
+
+                <p>
+
+                    Şifreye asla ihtiyaç duyulmaz.
+
+                </p>
+
+            </div>
+
+            <div class="security-item">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>
+
+                    Canlı Destek
+
+                </h3>
+
+                <p>
+
+                    Yardıma ihtiyacınız olduğunda destek ekibiyle iletişime geçin.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- SERVICE RULES -->
+<!-- ========================================= -->
+
+<section class="service-rules">
+
+    <div class="container">
+
+        <div class="rules-card">
+
+            <div class="rules-header">
+
+                <span class="section-tag">
+
+                    Rules
+
+                </span>
+
+                <h2>
+
+                    Sipariş vermeden önce dikkat ediniz
+
+                </h2>
+
+            </div>
+
+            <ul class="rules-list">
+
+                <li>
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Hesabınızın herkese açık olduğundan emin olun.
+
+                </li>
+
+                <li>
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Kullanıcı adını veya URL'yi tekrar kontrol edin.
+
+                </li>
+
+                <li>
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Aynı siparişi asla tekrarlamayın.
+
+                </li>
+
+                <li>
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Sipariş aktifken kullanıcı adınızı asla değiştirmeyin.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- PAGE END SPACER -->
+<!-- ========================================= -->
+
+<div class="page-end-space"></div>
+
+
+ <!-- ========================================= -->
+            <!-- FOOTER -->
+            <!-- ========================================= -->
+
+            <footer
+                class="footer"
+                id="contact">
+
+                <div class="container">
+
+                    <div class="footer-top">
+
+                        <!-- Brand -->
+
+                        <div class="footer-brand">
+
+                            <div class="footer-logo">
+
+                                <img src="assets/img/logo.png"
+                                    alt="AizawaKae">
+
+                            </div>
+
+                            <h2>
+
+                                AizawaKae
+
+                            </h2>
+
+                            <div class="footer-social">
+
+                                <a href="https://instagram.com/aizavakae">
+                                
+
+                                    <i class="fab fa-instagram"></i>
+
+                                </a>
+
+                                <a href="https://www.tiktok.com/@aizawakae"
+                                
+
+                                    <i class="fab fa-tiktok"></i>
+
+                                </a>
+
+                                <a href="https://discord.com/users/457298497650163733"
+
+                                    <i class="fab fa-discord"></i>
+
+                                </a>
+
+                                <a href="https://www.youtube.com/@aizawakae"
+
+                                    <i class="fab fa-youtube"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Menu -->
+
+                        <div class="footer-links">
+
+                            <h3>
+
+                                Menü
+
+                            </h3>
+
+                            </a>
+
+                             <a href="index.html">
+                                      Ana Sayfa
+                             </a>
+
+                            </a>
+
+                            <a href="kae.html">
+
+                                Kae Kimdir
+
+                            </a>
+
+                        </div>
+
+                        <!-- Contact -->
+
+                        <div class="footer-links">
+
+                            <h3>
+
+                                Mail
+
+                            </h3>
+
+                            <a href="mailto:aizawakae@gmail.com">
+
+                                aizawakae@gmail.com
+
+                            </a>
+
+                            <a href="tel:+901234567890">
+
+                                
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Footer Bottom -->
+
+                    <div class="footer-bottom">
+
+                        <div class="footer-line"></div>
+
+                        <div class="footer-bottom-wrapper">
+
+                            <p>
+
+                                © 2026 AizawaKae.
+                                Tüm hakları saklıdır.
+
+                            </p>
+
+                            <div class="footer-bottom-links">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+<!--=========================================
+    SCROLL TOP
+==========================================-->
+
+<button id="scrollTop" class="scroll-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+
+<div class="ambient-glow glow-one"></div>
+
+<div class="ambient-glow glow-two"></div>
+
+<div class="ambient-glow glow-three"></div>
+
+<div class="ambient-glow glow-four"></div>
+
+<div class="ambient-glow glow-five"></div>
+
+<div class="particles">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+<!-- ========================================= -->
+<!-- SCROLL TOP -->
+<!-- ========================================= -->
+
+<button id="scrollTopBtn" class="scroll-top-btn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+<!-- JS -->
+
+
+<script type="module" src="assets/js/index.js"></script>
+<script type="module" src="assets/js/menu.js"></script>
+<script type="module" src="assets/js/services.js"></script>
+
+
+
+
+</body>
+</html>

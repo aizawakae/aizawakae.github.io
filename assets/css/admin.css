@@ -1012,6 +1012,156 @@ textarea:focus{
 
 }
 
+/*=========================================================
+    ORDER MANAGEMENT
+=========================================================*/
+
+.admin-orders{
+
+    margin-top:20px;
+
+}
+
+.admin-orders-header{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr 130px;
+
+    gap:15px;
+
+    padding:0 18px 14px;
+
+    color:rgba(255,255,255,.45);
+
+    font-size:13px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+#ordersContainer{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.admin-order{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr 130px;
+
+    gap:15px;
+
+    align-items:center;
+
+    padding:16px 18px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    transition:.25s;
+
+}
+
+.admin-order:hover{
+
+    background:rgba(255,255,255,.03);
+
+}
+
+.admin-order-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:8px;
+
+}
+
+.admin-order-actions button{
+
+    width:36px;
+
+    height:36px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    transition:.25s;
+
+}
+
+.order-complete{
+
+    background:#1db954;
+
+}
+
+.order-processing{
+
+    background:#0d6efd;
+
+}
+
+.order-delete{
+
+    background:#dc3545;
+
+}
+
+.admin-pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:22px;
+
+}
+
+.admin-pagination button{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.admin-pagination button:hover{
+
+    background:#ff2d2d;
+
+}
+
+
+
 
 
 /* =========================================================
