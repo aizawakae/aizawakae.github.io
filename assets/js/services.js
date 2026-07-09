@@ -35,10 +35,6 @@ const quantityInput = document.getElementById("quantity");
 
 const estimatedPrice = document.getElementById("estimatedPrice");
 
-const calcQuantity = document.getElementById("calcQuantity");
-
-const calcTotal = document.getElementById("calcTotal");
-
 const submitButton = document.querySelector(".service-submit");
 
 /*=========================================================
@@ -487,17 +483,13 @@ function updatePrice(){
 
     const quantity = Number(quantityInput.value);
 
-    if(!service || quantity<=0){
+if(!service || quantity<=0){
 
-        estimatedPrice.textContent="--";
+    estimatedPrice.textContent="--";
 
-        calcQuantity.textContent="0";
+    return;
 
-        calcTotal.textContent="₺0.00";
-
-        return;
-
-    }
+}
 
   const serviceData = servicePrices[service];
 
@@ -514,9 +506,7 @@ const total =
 
     estimatedPrice.textContent = formatPrice(total);
 
-    calcQuantity.textContent = quantity.toLocaleString("tr-TR");
 
-    calcTotal.textContent = formatPrice(total);
 
 }
 
@@ -674,15 +664,11 @@ function resetForm(){
 
     resetService();
 
-    estimatedPrice.textContent="--";
+    estimatedPrice.textContent = "--";
 
-    calcQuantity.textContent="0";
+    targetLabel.textContent = "Username";
 
-    calcTotal.textContent="₺0.00";
-
-    targetLabel.textContent="Username";
-
-    targetInput.placeholder="@kullaniciadi";
+    targetInput.placeholder = "@kullaniciadi";
 
 }
 

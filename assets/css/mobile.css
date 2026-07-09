@@ -1403,6 +1403,317 @@ textarea{
 
 }
 
+
+/*=========================================================
+    SERVICES MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+    /* HERO */
+
+    .services-hero-wrapper{
+        padding-top:40px;
+        padding-bottom:70px;
+    }
+
+    .services-hero-right{
+        margin-top:45px;
+    }
+
+    .hero-preview{
+        width:100%;
+    }
+
+    .floating-card{
+        display:none;
+    }
+
+    /* SERVICES PANEL */
+
+    .services-layout{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .services-left,
+    .services-right{
+        position:static;
+        top:auto;
+    }
+
+    .service-panel{
+        padding:28px;
+    }
+
+    .service-panel-header h2{
+        font-size:30px;
+    }
+
+    /* STATS */
+
+    .services-stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* INFORMATION */
+
+    .service-info-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    /* STEPS */
+
+    .steps-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    /* QUICK SERVICES */
+
+    .quick-services-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    /* PLATFORM */
+
+    .platform-showcase-grid{
+        grid-template-columns:1fr;
+    }
+
+    .platform-status-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    /* SECURITY */
+
+    .security-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* RULES */
+
+    .rules-list{
+        grid-template-columns:1fr;
+    }
+
+    .rules-card{
+        padding:30px;
+    }
+
+    /* POPULAR */
+
+    .popular-services-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* LIVE */
+
+    .live-status-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .live-preview-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    /* FEATURES */
+
+    .service-features-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* TRUST */
+
+    .trust-badges-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    /* COUNTER */
+
+    .platform-counter-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    /* WALLET */
+
+    .wallet-summary-card{
+        grid-template-columns:1fr;
+    }
+
+    /* ORDER */
+
+    .order-information-card,
+    .calculator-wrapper,
+    .order-summary-wrapper{
+        grid-template-columns:1fr;
+        padding:30px;
+    }
+
+    /* CTA */
+
+    .services-cta-box,
+    .confirmation-card,
+    .footer-cta-card,
+    .support-banner-card,
+    .balance-reminder-card{
+        padding:35px 25px;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .services-cta-box h2,
+    .confirmation-card h2,
+    .footer-cta-card h2{
+        font-size:34px;
+    }
+
+    /* TABLE */
+
+    .table-wrapper,
+    .history-table,
+    .recent-services-table{
+        overflow-x:auto;
+    }
+
+    /* INPUT */
+
+    .service-field input,
+    .service-field select{
+        height:56px;
+    }
+
+    /* PRICE */
+
+    .service-price{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+}
+
+/*=========================================================
+    ADMIN MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+    .admin-orders-header{
+
+        display:none;
+
+    }
+
+    .admin-order{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:14px;
+
+        padding:18px;
+
+    }
+
+    .admin-order-actions{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+    .admin-order-actions button{
+
+        flex:1;
+
+        height:44px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .user-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .user-info{
+
+        width:100%;
+
+    }
+
+}
+
+/*=========================================================
+    ADMIN MOBILE SIZE
+=========================================================*/
+
+@media (max-width:768px){
+
+    .admin-card{
+        padding:20px;
+        border-radius:20px;
+    }
+
+    .admin-welcome{
+        padding:24px;
+    }
+
+    .admin-welcome h1{
+        font-size:32px;
+    }
+
+    .user-card{
+        padding:16px;
+        gap:14px;
+    }
+
+    .user-avatar{
+        width:60px;
+        height:60px;
+    }
+
+    .user-info h3{
+        font-size:16px;
+    }
+
+    .admin-buttons button{
+        height:48px;
+        font-size:15px;
+    }
+
+    .user-search input,
+    .user-search button{
+        height:50px;
+    }
+
+    .admin-orders{
+        font-size:14px;
+    }
+
+    .admin-order{
+        padding:14px;
+    }
+
+    .admin-order-actions button{
+        width:38px;
+        height:38px;
+    }
+
+}
+
 /*==========================================================
     END
 ==========================================================*/

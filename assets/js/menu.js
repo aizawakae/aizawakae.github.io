@@ -87,7 +87,38 @@ document.addEventListener("keydown",(e)=>{
 
 onAuthStateChanged(auth, async (user) => {
 
-    if (!user) return;
+    if (!user) {
+
+        if (menuUsername) menuUsername.textContent = "Misafir";
+
+        if (menuPremium) menuPremium.textContent = "Giriş yapılmadı";
+
+        const balanceCard = document.querySelector(".menu-balance");
+
+if (balanceCard) {
+    balanceCard.style.display = "none";
+}
+
+        if (menuVerified) menuVerified.style.display = "none";
+
+        if (logoutButton) {
+
+            logoutButton.innerHTML = `
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Giriş Yap
+            `;
+
+            logoutButton.onclick = () => {
+
+                window.location.href = "login.html";
+
+            };
+
+        }
+
+        return;
+
+    }
 
     try {
 
