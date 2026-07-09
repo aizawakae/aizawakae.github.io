@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://aizawakae.com/</loc>
+    </url>
+
+    <url>
+        <loc>https://aizawakae.com/login.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aizawakae.com/register.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aizawakae.com/panel.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aizawakae.com/services.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aizawakae.com/orders.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aizawakae.com/wallet.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aizawakae.com/admin.html</loc>
+    </url>
+
+    <url>
+        <loc>https://aizawakae.com/kae.html</loc>
+    </url>
+
+</urlset>
