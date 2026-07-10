@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wallet</title>
+
+    <meta name="description" content="AizawaKae Premium Wallet">
+
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+
+
+
+        <!-- ========================================= -->
+    <!-- META -->
+    <!-- ========================================= -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AizawaWallet</title>
+
+    <meta name="description"
+        content="AizawaKae - Yeni nesil sosyal medya hizmetleri, premium üyelik sistemi ve gelişmiş kullanıcı deneyimi.">
+
+    <meta name="keywords"
+        content="AizawaKae, Sosyal Medya, Discord, Instagram, TikTok, YouTube">
+
+    <meta name="author"
+        content="AizawaKae">
+
+    <meta name="theme-color"
+        content="#050505">
+
+
+        <!-- ========================================= -->
+    <!-- FAVICON -->
+    <!-- ========================================= -->
+
+    <link rel="icon"
+        href="assets/img/logo.png">
+
+
+
+    <!-- ========================================= -->
+    <!-- GOOGLE FONT -->
+    <!-- ========================================= -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- ========================================= -->
+    <!-- ICON -->
+    <!-- ========================================= -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+<!-- ========================================= -->
+<!-- FAVICON -->
+<!-- ========================================= -->
+
+<link rel="icon"
+      type="image/png"
+      href="assets/img/favicon.png">
+
+
+    <!-- CSS -->
+
+
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/wallet.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/mobile.css">
+
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- LOADER -->
+    <!-- ========================================= -->
+
+    <div id="loader">
+
+        <div class="loader-logo">
+
+            <img src="assets/img/logo.png"
+                alt="AizawaKae">
+
+        </div>
+
+        <div class="loader-line"></div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- BACKGROUND SYSTEM -->
+    <!-- ========================================= -->
+
+    <div class="background-system">
+
+        <div class="bg-grid"></div>
+
+        <div class="bg-noise"></div>
+
+        <div class="bg-red-left"></div>
+
+        <div class="bg-red-center"></div>
+
+        <div class="bg-purple-right"></div>
+
+        <div class="bg-light light-1"></div>
+
+        <div class="bg-light light-2"></div>
+
+        <div class="bg-light light-3"></div>
+
+        <div class="mouse-glow"></div>
+
+    </div>
+
+<!-- ========================================= -->
+    <!-- NAVBAR -->
+    <!-- ========================================= -->
+
+    <header class="header">
+
+        <div class="navbar">
+
+            <!-- Logo -->
+
+            <a href="index.html"
+                class="logo">
+
+                <div class="logo-image">
+
+                    <img src="assets/img/logo.png"
+                        alt="AizawaKae">
+
+                </div>
+
+                <div class="logo-text">
+
+                    <h2>AizawaKae</h2>
+
+                </div>
+
+            </a>
+
+            <!-- Desktop Menu -->
+
+            <nav class="desktop-menu">
+
+                <a href="#hero"> </a>
+
+                <a href="#features"></a>
+
+                <a href="#premium"></a>
+
+                <a href="#contact"></a>
+
+            </nav>
+
+            <!-- Right -->
+
+            <div class="navbar-right">
+
+                <button class="menu-button"
+                    id="menuButton">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </button>
+
+            </div>
+
+    </header>
+
+
+<!-- ========================================= -->
+<!-- MENU -->
+<!-- ========================================= -->
+
+<div class="menu-overlay"></div>
+
+<aside class="menu">
+
+    <div class="menu-ambient"></div>
+    <div class="menu-glass"></div>
+    <div class="menu-border"></div>
+    <div class="menu-noise"></div>
+    <div class="menu-shadow"></div>
+
+    <div class="menu-content">
+
+        <!-- HEADER -->
+        <div class="menu-header">
+
+            <button class="menu-close" id="menuClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="menu-profile">
+
+                <h2 class="menu-user-title">
+
+    <span id="menuUsername">Misafir</span>
+
+    <i
+        id="menuVerified"
+        class="fa-solid fa-circle-check">
+    </i>
+
+</h2>
+                <span id="menuPremium">Standart Üye</span>
+
+            </div>
+
+            <!-- BALANCE -->
+            <div class="menu-balance">
+
+                <div class="menu-balance-header">
+
+                    <div class="menu-balance-title">
+                        <i class="fa-solid fa-wallet"></i>
+                        Bakiye
+                    </div>
+
+                    <a href="wallet.html" class="menu-balance-add">
+
+    <i class="fa-solid fa-plus"></i>
+
+</a>
+
+                </div>
+
+<div class="menu-balance-value" id="menuBalance">
+    ₺0.00
+</div>
+
+        </div>
+
+        <!-- NAV -->
+        <nav class="menu-nav">
+
+            <a href="panel.html" class="menu-link">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Panel</span>
+                <div class="hover-light"></div>
+            </a>
+
+            <a href="services.html" class="menu-link">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Hizmetler</span>
+                <div class="hover-light"></div>
+            </a>
+
+            <a href="orders.html" class="menu-link">
+                <i class="fa-solid fa-box"></i>
+                <span>Siparişler</span>
+                <div class="hover-light"></div>
+            </a>
+
+        </nav>
+
+        <!-- FOOTER -->
+        <div class="menu-footer">
+
+<button class="menu-logout" id="logoutButton">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Çıkış Yap
+</button>
+
+        </div>
+
+    </div>
+
+</aside>
+
+    <!--=========================================================
+        MAIN
+    =========================================================-->
+
+    <main class="wallet-page">
+
+        <div class="container">
+
+                        <!--=========================================================
+                WALLET HERO
+            =========================================================-->
+
+            <section class="wallet-hero">
+
+                <div class="wallet-hero-content">
+
+                    <span class="wallet-badge">
+
+                        <i class="ri-wallet-3-line"></i>
+
+                         Wallet
+
+                    </span>
+
+                    <h1>
+
+                        Wallet
+
+                        <span>Dashboard</span>
+
+                    </h1>
+
+                </div>
+
+            </section>
+
+            <!--=========================================================
+                BALANCE CARD
+            =========================================================-->
+
+            <section class="wallet-balance">
+
+                <div class="balance-card">
+
+                    <div class="balance-header">
+
+                        <div>
+
+                            <span class="balance-label">
+
+                             Bakiye
+
+                            </span>
+
+                            <h2 id="walletBalance">
+
+                                ₺0.00
+
+                            </h2>
+
+                        </div>
+
+                        <div class="balance-icon">
+
+                            <i class="ri-wallet-3-fill"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="balance-actions">
+
+                        <button class="btn-primary" id="depositBtn">
+
+                            <i class="ri-add-circle-line"></i>
+
+                         Yükle
+
+                        </button>
+
+                        <button class="btn-secondary" id="historyBtn">
+
+                            <i class="ri-history-line"></i>
+
+                            İşlem Geçmişi
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+
+
+
+            <!--=========================================================
+    DEPOSIT MODAL
+=========================================================-->
+
+<div class="deposit-modal" id="depositModal">
+
+    <div class="deposit-modal-box">
+
+        <button class="deposit-close" id="depositClose">
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+        <div class="deposit-header">
+
+            <i class="ri-wallet-3-line"></i>
+
+            <h2>Bakiye Yükle</h2>
+
+        </div>
+
+        <div class="deposit-body">
+
+            <label>
+
+                Tutar
+
+            </label>
+
+            <div class="deposit-input">
+
+                <span>₺</span>
+
+                <input
+                    type="number"
+                    id="depositAmount"
+                    placeholder="Örneğin 1000"
+                    min="100"
+                >
+
+            </div>
+
+            <small>
+
+                Minimum yükleme tutarı ₺100'dir.
+
+            </small>
+
+            <button id="depositContinue" class="deposit-btn">
+
+                
+
+                Yükle
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <!--=========================================================
+                WALLET STATS
+            =========================================================-->
+
+            <section class="wallet-stats">
+
+                <div class="wallet-stat-card">
+
+                    <div class="wallet-stat-icon">
+
+                        <i class="ri-shopping-bag-3-line"></i>
+
+                    </div>
+
+                    <div class="wallet-stat-content">
+
+                        <span>Toplam Sipariş</span>
+
+                        <h3 id="totalOrders">
+
+                            0
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div class="wallet-stat-card">
+
+                    <div class="wallet-stat-icon">
+
+                        <i class="ri-money-dollar-circle-line"></i>
+
+                    </div>
+
+                    <div class="wallet-stat-content">
+
+                        <span>Toplam Harcama</span>
+
+                        <h3 id="totalSpent">
+
+                            ₺0.00
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div class="wallet-stat-card">
+
+                    <div class="wallet-stat-icon">
+
+                        <i class="ri-time-line"></i>
+
+                    </div>
+
+                    <div class="wallet-stat-content">
+
+                        <span>Bekleyen İşlem</span>
+
+                        <h3 id="pendingTransactions">
+
+                            0
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div class="wallet-stat-card">
+
+                    <div class="wallet-stat-icon">
+
+                        <i class="ri-shield-check-line"></i>
+
+                    </div>
+
+                    <div class="wallet-stat-content">
+
+                        <span>Hesap Durumu</span>
+
+                        <h3>
+
+                            Aktif
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--=========================================================
+                QUICK ACTIONS
+            =========================================================-->
+
+            <section class="wallet-grid">
+
+                <div class="wallet-box">
+
+                    <div class="wallet-box-header">
+
+                        <h2>
+
+                            <i class="ri-flashlight-line"></i>
+
+                            Hızlı Yükleme
+
+                        </h2>
+
+                    </div>
+
+                    <div class="quick-actions">
+
+    <button class="quick-action quick-balance" data-amount="100">
+
+        <i class="ri-money-dollar-circle-line"></i>
+
+        <span>₺100</span>
+
+    </button>
+
+    <button class="quick-action quick-balance" data-amount="250">
+
+        <i class="ri-money-dollar-circle-line"></i>
+
+        <span>₺250</span>
+
+    </button>
+
+    <button class="quick-action quick-balance" data-amount="500">
+
+        <i class="ri-money-dollar-circle-line"></i>
+
+        <span>₺500</span>
+
+    </button>
+
+    <button class="quick-action quick-balance" data-amount="1000">
+
+        <i class="ri-money-dollar-circle-line"></i>
+
+        <span>₺1000</span>
+
+    </button>
+
+</div>
+
+<div class="quick-pay">
+
+    <button class="quick-pay-btn">
+
+        <i class="ri-bank-card-line"></i>
+
+        Öde
+
+    </button>
+
+</div>
+
+                </div>
+
+                <div class="wallet-box">
+
+                    <div class="wallet-box-header">
+
+                        <h2>
+
+                            <i class="ri-bank-card-line"></i>
+
+                            Ödeme Yöntemleri
+
+                        </h2>
+
+                    </div>
+
+                    <div class="payment-methods">
+
+                        <div class="payment-card">
+
+                            <div class="payment-icon">
+
+                                <i class="ri-bank-card-fill"></i>
+
+                            </div>
+
+                            <div class="payment-info">
+
+                                <h4>Kredi / Banka Kartı</h4>
+
+                                <span>Visa • MasterCard</span>
+
+                            </div>
+
+                            <i class="ri-history-line"></i>
+
+                        </div>
+
+                        <div class="payment-card">
+
+                            <div class="payment-icon">
+
+                                <i class="ri-bank-line"></i>
+
+                            </div>
+
+                            <div class="payment-info">
+
+                                <h4>Shopier</h4>
+
+                                <span>7/24 Aktif</span>
+
+                            </div>
+
+                            <i class="ri-checkbox-circle-fill payment-check"></i>
+
+                        </div>
+
+                        <div class="payment-card">
+
+                            <div class="payment-icon">
+
+                                <i class="ri-smartphone-line"></i>
+
+                            </div>
+
+                            <div class="payment-info">
+
+                                <h4>Papara (Bakımda)</h4>
+
+                                <span>Anında Transfer</span>
+
+                            </div>
+
+                            <i class="ri-history-line"></i>
+
+                        </div>
+
+                        <div class="payment-card">
+
+                            <div class="payment-icon">
+
+                                <i class="ri-bit-coin-line"></i>
+                                
+
+                            </div>
+
+                            <div class="payment-info">
+
+                                <h4>Kripto  (Aktif Değil)</h4>
+
+                                <span>BTC • ETH • USDT</span>
+
+                            </div>
+
+                            <i class="ri-tools-line"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+                        <!--=========================================================
+                TRANSACTION HISTORY
+            =========================================================-->
+
+            <section class="wallet-history">
+
+                <div class="wallet-box">
+
+                    <div class="wallet-box-header">
+
+                        <h2>
+
+                            <i class="ri-history-line"></i>
+
+                            Son İşlemler
+
+                        </h2>
+
+                        <button class="history-btn">
+
+                            Tümünü Gör
+
+                        </button>
+
+                    </div>
+
+                    <div class="table-wrapper">
+
+                        <table class="wallet-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Tarih</th>
+
+                                    <th>İşlem</th>
+
+                                    <th>Tutar</th>
+
+                                    <th>Durum</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="transactionTable">
+
+                                <tr>
+
+                                    <td>-</td>
+
+                                    <td>Henüz işlem bulunmuyor</td>
+
+                                    <td>₺0.00</td>
+
+                                    <td>
+
+                                        <span class="status pending">
+
+                                            Bekleniyor
+
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!--=========================================================
+        FOOTER
+    =========================================================-->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026 AizawaKae Premium. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!--=========================================================
+        JAVASCRIPT
+    =========================================================-->
+
+<script type="module" src="assets/js/index.js"></script>
+<script type="module" src="assets/js/menu.js"></script>
+<script type="module" src="assets/js/wallet.js"></script>
+
+
+</body>
+
+</html>
