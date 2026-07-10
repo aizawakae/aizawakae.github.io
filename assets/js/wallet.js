@@ -44,11 +44,62 @@ const depositContinue = document.getElementById("depositContinue");
 
 const depositAmount = document.getElementById("depositAmount");
 
+const shopierModal = document.getElementById("shopierModal");
+const shopierAmount = document.getElementById("shopierAmount");
+
+const shopierCancel = document.querySelector(".shopier-cancel");
+const shopierConfirm = document.querySelector(".shopier-confirm");
+
+
 /*=========================================================
     VARIABLES
 =========================================================*/
 
 let currentUser = null;
+
+
+/*=========================================================
+    Shopier
+=========================================================*/
+
+
+const walletLinks = {
+    100: "https://www.shopier.com/aizawakae/48863701",
+    250: "https://www.shopier.com/aizawakae/48863717",
+    500: "https://www.shopier.com/aizawakae/48863736",
+    1000: "https://www.shopier.com/aizawakae/48863787"
+};
+
+const quickPayButton = document.querySelector(".quick-pay-btn");
+quickPayButton.addEventListener("click", () => {
+
+    if (!selectedAmount) {
+
+        showNotification("Lütfen önce bir bakiye paketi seçin.", "warning");
+
+        return;
+
+    }
+
+    quickPayButton.addEventListener("click", () => {
+
+    if (!selectedAmount) {
+        alert("Lütfen bir bakiye paketi seçiniz.");
+        return;
+    }
+
+    const confirmPayment = confirm(
+        `₺${selectedAmount} bakiye yükleme için Shopier'in güvenli ödeme sayfası yeni sekmede açılacaktır.\n\nDevam etmek istiyor musunuz?`
+    );
+
+    if (!confirmPayment) return;
+
+    window.open(walletLinks[selectedAmount], "_blank");
+
+});
+
+});
+
 
 /*=========================================================
     AUTH CHECK
@@ -470,5 +521,102 @@ depositModal?.addEventListener("click",(e)=>{
         depositModal.style.display="none";
 
     }
+
+});
+
+
+
+quickPayButton.addEventListener("click", () => {
+
+    if (!selectedAmount) {
+
+        showNotification("Lütfen önce bir bakiye paketi seçin.", "warning");
+
+        return;
+
+    }
+
+    shopierAmount.textContent = `₺${selectedAmount}`;
+
+    shopierModal.classList.add("active");
+
+});
+
+shopierCancel.addEventListener("click", () => {
+
+    shopierModal.classList.remove("active");
+
+    location.reload();
+
+});
+
+shopierConfirm.addEventListener("click", () => {
+
+    window.open(walletLinks[selectedAmount], "_blank");
+
+    shopierModal.classList.remove("active");
+
+    setTimeout(() => {
+
+        location.reload();
+
+    }, 300);
+
+});
+
+
+
+
+const paymentReportButton = document.querySelector(".payment-report-btn");
+
+const paymentModal = document.getElementById("paymentModal");
+
+const paymentClose = document.querySelector(".payment-close");
+const paymentSend = document.querySelector(".payment-send");
+const shopierOrderNo = document.getElementById("shopierOrderNo");
+const paymentAmount = document.getElementById("paymentAmount");
+
+paymentReportButton.addEventListener("click", () => {
+
+    paymentModal.classList.add("active");
+
+});
+
+paymentClose.addEventListener("click", () => {
+
+    paymentModal.classList.remove("active");
+
+});
+
+paymentSend.addEventListener("click", () => {
+
+    const orderNo = shopierOrderNo.value.trim();
+
+    const amount = paymentAmount.value;
+
+    if (!orderNo) {
+
+        showNotification("Lütfen Shopier sipariş numarasını girin.", "warning");
+
+        return;
+
+    }
+
+    const message =
+`💳 AIZAWAKAE WALLET BİLDİRİMİ
+
+👤 Kullanıcı: ${currentUser.email}
+
+💰 Tutar: ${amount}₺
+
+🧾 Shopier Sipariş No:
+${orderNo}`;
+
+    window.open(
+        `https://wa.me/905386696193?text=${encodeURIComponent(message)}`,
+        "_blank"
+    );
+
+    paymentModal.classList.remove("active");
 
 });

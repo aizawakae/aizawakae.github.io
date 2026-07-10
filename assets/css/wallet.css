@@ -1280,3 +1280,459 @@
     cursor:pointer;
 
 }
+
+
+
+
+/*=========================================================
+    Shopier
+=========================================================*/
+
+
+
+.quick-balance.active{
+
+    border:1px solid #ff3b3b;
+
+    background:rgba(255,59,59,.12);
+
+    box-shadow:
+    0 0 20px rgba(255,59,59,.35);
+
+}
+
+/*=========================================================
+    SHOPIER MODAL
+=========================================================*/
+
+.shopier-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(8px);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.25s;
+
+    z-index:99999;
+
+}
+
+.shopier-modal.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.shopier-modal-box{
+
+    width:min(420px,90vw);
+
+    background:#161616;
+
+    border:1px solid rgba(255,0,0,.2);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.6),
+    0 0 35px rgba(255,0,0,.15);
+
+    transform:scale(.9);
+
+    transition:.25s;
+
+}
+
+.shopier-modal.active .shopier-modal-box{
+
+    transform:scale(1);
+
+}
+
+.shopier-modal-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    border-radius:18px;
+
+    background:linear-gradient(180deg,#ff3d3d,#d80000);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+    box-shadow:0 0 30px rgba(255,0,0,.35);
+
+}
+
+.shopier-modal h2{
+
+    margin-bottom:12px;
+
+}
+
+.shopier-modal-text{
+
+    color:#999;
+
+    margin-bottom:8px;
+
+}
+
+#shopierAmount{
+
+    color:#ff3d3d;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+.shopier-modal-description{
+
+    color:#bbb;
+
+    line-height:1.6;
+
+}
+
+.shopier-modal-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.shopier-modal-buttons button{
+
+    flex:1;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+}
+
+.shopier-cancel{
+
+    background:#2b2b2b;
+
+    color:#fff;
+
+}
+
+.shopier-confirm{
+
+    background:linear-gradient(180deg,#ff3d3d,#d80000);
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(255,0,0,.35);
+
+}
+/*=========================================================
+    PAYMENT REPORT MODAL
+=========================================================*/
+
+.payment-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(8px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.25s;
+
+    z-index:99999;
+
+}
+
+.payment-modal.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.payment-modal-box{
+
+    width:min(460px,92vw);
+
+    background:#161616;
+
+    border:1px solid rgba(255,0,0,.18);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.65),
+    0 0 35px rgba(255,0,0,.12);
+
+    transform:scale(.92);
+
+    transition:.25s;
+
+}
+
+.payment-modal.active .payment-modal-box{
+
+    transform:scale(1);
+
+}
+
+.payment-modal-box h2{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+.payment-modal-box p{
+
+    color:#9f9f9f;
+
+    line-height:1.6;
+
+    margin-bottom:28px;
+
+}
+
+.payment-input{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin-bottom:22px;
+
+}
+
+.payment-input label{
+
+    color:#d5d5d5;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.payment-input input,
+.payment-input select{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    background:#202020;
+
+    color:#fff;
+
+    padding:0 18px;
+
+    transition:.25s;
+
+}
+
+.payment-input input:focus,
+.payment-input select:focus{
+
+    border:1px solid #ff3b3b;
+
+    box-shadow:0 0 20px rgba(255,59,59,.25);
+
+}
+
+.payment-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.payment-buttons button{
+
+    flex:1;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.payment-close{
+
+    background:#2b2b2b;
+
+    color:#fff;
+
+}
+
+.payment-close:hover{
+
+    background:#393939;
+
+}
+
+.payment-send{
+
+    background:linear-gradient(180deg,#ff4343,#d50000);
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(255,0,0,.28);
+
+}
+
+.payment-send:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 14px 30px rgba(255,0,0,.38);
+
+}
+/*=========================================================
+    PAYMENT REPORT
+=========================================================*/
+
+.payment-report{
+
+    margin-top:18px;
+
+}
+
+.payment-report p{
+
+    color:#a9a9a9;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    margin-bottom:15px;
+
+}
+
+.payment-report-btn{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#242424;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.payment-report-btn:hover{
+
+    background:#2f2f2f;
+
+    border:1px solid rgba(255,60,60,.35);
+
+    box-shadow:0 0 20px rgba(255,0,0,.18);
+
+}
+
+.payment-report-btn i{
+
+    color:#ff3b3b;
+
+    font-size:18px;
+
+}

@@ -386,7 +386,7 @@
 
                             <i class="ri-add-circle-line"></i>
 
-                         Yükle
+                         Yükle  (Bakımda Hızlı Yükleme Kullanınız.)
 
                         </button>
 
@@ -626,13 +626,67 @@
 
 <div class="quick-pay">
 
-    <button class="quick-pay-btn">
+<button type="button" class="quick-pay-btn">
 
-        <i class="ri-bank-card-line"></i>
+    <i class="ri-bank-card-line"></i>
 
-        Öde
+    Öde
 
-    </button>
+</button>
+
+</div>
+
+<button type="button" class="payment-report-btn">
+
+    <i class="ri-file-list-3-line"></i>
+
+    Ödemeyi Bildir
+
+</button>
+<div class="payment-modal" id="paymentModal">
+
+    <div class="payment-modal-box">
+
+        <h2>Ödemeyi Bildir</h2>
+
+        <p>Shopier ödemenizi tamamladıysanız aşağıdaki bilgileri doldurun.</p>
+
+        <div class="payment-input">
+
+            <label>Shopier Sipariş Numarası</label>
+
+            <input type="text" id="shopierOrderNo" placeholder="Sipariş No">
+
+        </div>
+
+        <div class="payment-input">
+
+            <label>Ödeme Tutarı</label>
+
+            <select id="paymentAmount">
+
+                <option value="100">100₺</option>
+                <option value="250">250₺</option>
+                <option value="500">500₺</option>
+                <option value="1000">1000₺</option>
+
+            </select>
+
+        </div>
+
+        <div class="payment-buttons">
+
+            <button type="button" class="payment-close">
+                Vazgeç
+            </button>
+
+            <button type="button" class="payment-send">
+                Bildir
+            </button>
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -823,23 +877,186 @@
 
     </main>
 
+
     <!--=========================================================
-        FOOTER
-    =========================================================-->
+    SHOPIER MODAL
+=========================================================-->
 
-    <footer class="footer">
+<div class="shopier-modal" id="shopierModal">
 
-        <div class="container">
+    <div class="shopier-modal-box">
 
-            <p>
+        <div class="shopier-modal-icon">
+            <i class="ri-bank-card-line"></i>
+        </div>
 
-                © 2026 AizawaKae Premium. All Rights Reserved.
+        <h2>Shopier Güvenli Ödeme</h2>
 
-            </p>
+        <p class="shopier-modal-text">
+            Seçilen Paket
+        </p>
+
+        <h3 id="shopierAmount">₺0</h3>
+
+        <p class="shopier-modal-description">
+            Shopier'in güvenli ödeme sayfası yeni sekmede açılacaktır.
+        </p>
+
+        <div class="shopier-modal-buttons">
+
+<button type="button" class="shopier-cancel">
+    Vazgeç
+</button>
+
+<button type="button" class="shopier-confirm">
+    Ödemeye Geç
+</button>
 
         </div>
 
-    </footer>
+    </div>
+
+</div>
+
+ <!-- ========================================= -->
+            <!-- FOOTER -->
+            <!-- ========================================= -->
+
+            <footer
+                class="footer"
+                id="contact">
+
+                <div class="container">
+
+                    <div class="footer-top">
+
+                        <!-- Brand -->
+
+                        <div class="footer-brand">
+
+                            <div class="footer-logo">
+
+                                <img src="assets/img/logo.png"
+                                    alt="AizawaKae">
+
+                            </div>
+
+                            <h2>
+
+                                AizawaKae
+
+                            </h2>
+
+                            <div class="footer-social">
+
+                                <a href="https://instagram.com/aizavakae">
+                                
+
+                                    <i class="fab fa-instagram"></i>
+
+                                </a>
+
+                                <a href="https://www.tiktok.com/@aizawakae"
+                                
+
+                                    <i class="fab fa-tiktok"></i>
+
+                                </a>
+
+                                <a href="https://discord.com/users/457298497650163733"
+
+                                    <i class="fab fa-discord"></i>
+
+                                </a>
+
+                                <a href="https://www.youtube.com/@aizawakae"
+
+                                    <i class="fab fa-youtube"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Menu -->
+
+                        <div class="footer-links">
+
+                            <h3>
+
+                                Menü
+
+                            </h3>
+
+                            </a>
+
+                             <a href="index.html">
+                                      Ana Sayfa
+                             </a>
+
+                            </a>
+
+                            <a href="kae.html">
+
+                                Kae Kimdir
+
+                            </a>
+
+                        </div>
+
+                        <!-- Contact -->
+
+                        <div class="footer-links">
+
+                            <h3>
+
+                                Mail
+
+                            </h3>
+
+                            <a href="mailto:aizawakae@gmail.com">
+
+                                aizawakae@gmail.com
+
+                            </a>
+
+                            <a href="tel:+901234567890">
+
+                                
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Footer Bottom -->
+
+                    <div class="footer-bottom">
+
+                        <div class="footer-line"></div>
+
+                        <div class="footer-bottom-wrapper">
+
+                            <p>
+
+                                © 2026 AizawaKae.
+                                Tüm hakları saklıdır.
+
+                            </p>
+
+                            <div class="footer-bottom-links">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </footer>
 
     <!--=========================================================
         JAVASCRIPT
